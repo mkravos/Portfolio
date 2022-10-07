@@ -4,18 +4,6 @@
     font-size: 25px;
 }
 
-.Welcome-background {
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.2;
-}
-
 .Welcome-heading {
     font-size: 70px;
 }

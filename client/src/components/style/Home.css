@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+.Home-content-desktop {
+    position: absolute;
+    font-weight: 800;
+}
+
+.Home-content-mobile {
+    position: absolute;
+    font-weight: 800;
+}
