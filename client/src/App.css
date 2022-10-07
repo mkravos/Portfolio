@@ -16,6 +16,10 @@
   color: rgb(255, 255, 255);
 }
 
+.Content-page {
+  background-color: rgba(0, 123, 255, 0.621);
+}
+
 .background {
   -webkit-user-drag: none;
   user-select: none;
@@ -28,12 +32,24 @@
   opacity: 0.2;
 }
 
+.Location-bar {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 95vw;
+  height: 45px;
+  margin-bottom: 90vh;
+}
+.location {
+  font-size: 35px;
+}
+
 .Back-btn-desktop {
   cursor: pointer;
   position: absolute;
-  align-self: flex-start;
-  margin-bottom: 92vh;
-  margin-left: 1.5vw;
+  margin-top: 3px;
+  margin-right: 92vw;
   background: none;
   color: white;
   border: none;
@@ -46,9 +62,8 @@
 .Back-btn-mobile {
   cursor: pointer;
   position: absolute;
-  align-self: flex-start;
-  margin-bottom: 95vh;
-  margin-left: 1.5vw;
+  margin-top: 3px;
+  margin-right: 75vw;
   background: none;
   color: white;
   border: none;
