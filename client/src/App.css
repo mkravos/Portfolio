@@ -15,6 +15,11 @@
   color: rgb(255, 255, 255);
 }
 
+a {
+  text-decoration: none;
+  color: rgb(0, 112, 231);
+}
+
 .background-mobile {
   -webkit-user-drag: none;
   user-select: none;
@@ -23,7 +28,7 @@
   -ms-user-select: none;
   opacity: 0.2;
   position: relative;
-  height: 860px;
+  height: 940px;
 }
 
 .background {

@@ -44,8 +44,8 @@ export default function Profile() {
                             <img className="Profile-photo-mobile" alt="profile" src={profileImage}/>
                             <div className="Profile-header-text">
                                 <div className="Large-mobile-text">Maj Kravos</div>
-                                <div className="Muted-mobile-text">Located in Chicago, IL, USA</div>
-                                <div className="Muted-mobile-text">Employed by ASAR Digital</div>
+                                <div className="Muted-mobile-text">Chicago, IL, United States</div>
+                                <div className="Muted-mobile-text"><a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a></div>
                                 <button className="Contact-button-mobile">Contact Me</button>
                             </div>
                         </div>
@@ -62,6 +62,10 @@ export default function Profile() {
                         <div className="Profile-description-mobile">
                             <center>
                                 <div className="Large-mobile-text">Background</div>
+                                <div className="Subheading-mobile-text">
+                                    Skills
+                                </div>
+                                <p className="Sub-description-mobile-text">HTML, CSS, JavaScript, Node.js, React, Express, PostgreSQL, Python, Java, C#</p>
                                 <div className="Subheading-mobile-text">
                                     Work
                                 </div>
