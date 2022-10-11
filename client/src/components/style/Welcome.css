@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
 .Welcome-page {
+    justify-content: center;
     font-size: 25px;
 }
 

@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
 .App {
-  text-align: center;
   font-family: "Abel";
+  background-color: rgba(0, 123, 255, 0.621);
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .App-header {
-  background-color: rgba(0, 123, 255, 0.621);
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
 }
 
-.Content-page {
-  background-color: rgba(0, 123, 255, 0.621);
+.background-mobile {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  opacity: 0.2;
+  position: relative;
+  height: 860px;
 }
 
 .background {
@@ -26,10 +32,9 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-
-  width: 100vw;
-  height: 100vh;
   opacity: 0.2;
+  position: relative;
+  height: 100vh;
 }
 
 .Location-bar {
@@ -39,7 +44,7 @@
   justify-content: center;
   width: 95vw;
   height: 45px;
-  margin-bottom: 90vh;
+  margin-top: 20px;
 }
 .location {
   font-size: 35px;

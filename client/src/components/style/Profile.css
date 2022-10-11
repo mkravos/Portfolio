@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+.Home-content-desktop {
+    display: flex;
+    position: absolute;
+    font-weight: 800;
+    width: 95vw;
+    margin-top: 65px;
+}
+
+.Home-content-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 800;
+    width: 85vw;
+    margin-top: 90px;
+}
+
+.Profile-header-mobile {
+    display: flex;
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 25px;
+}
+
+.Profile-description-mobile {
+    height: fit-content;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 2.5px 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.Profile-photo-mobile {
+    width: 125px;
+    height: 125px;
+    border-radius: 20px;
+    justify-self: flex-start;
+}
+
+.Profile-header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: "Abel";
+    font-weight: 800;
+}
+
+.Large-mobile-text {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.Muted-mobile-text {
+    color: rgb(84, 84, 84);
+    font-size: 15px;
+}
+
+.Description-mobile-text {
+    display: flex;
+    color: rgb(48, 48, 48);
+    font-size: 15px;
+    text-align: left;
+    width: 90%;
+}
+
+.Sub-description-mobile-text {
+    display: flex;
+    color: rgb(48, 48, 48);
+    font-size: 15px;
+    text-align: left;
+    width: 90%;
+    margin-left: 15px;
+}
+
+.Subheading-mobile-text {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-align: left;
+    width: 90%;
+}
+
+.List-mobile-text {
+    display: flex;
+    color: rgb(48, 48, 48);
+    font-size: 15px;
+}
+
+.Contact-button-mobile {
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    height: 25px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: "Abel";
+}
+
+.Projects-button-mobile {
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    height: 50px;
+    width: 65vw;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: "Abel";
+    align-self: center;
+}
