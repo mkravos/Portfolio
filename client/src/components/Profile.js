@@ -4,7 +4,7 @@ import React, {useState} from "react";
 import { isMobile } from "react-device-detect";
 import Welcome from "./Welcome"
 
-export default function Home() {
+export default function Profile() {
     const [renderWelcome, setRender] = useState(false);
     const onShow = React.useCallback(() => setRender(true), []);
 

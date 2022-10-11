@@ -2,7 +2,7 @@ import "./style/Welcome.css";
 import background from "../assets/SplashBackground.jpg";
 import React, {useState} from "react";
 import { isMobile } from "react-device-detect";
-import Home from "./Home";
+import Profile from "./Profile";
 
 export default function Welcome() {
     const [renderHome, setRender] = useState(false);
@@ -52,7 +52,7 @@ export default function Welcome() {
     }
     else {
         return(
-            <Home/>
+            <Profile/>
         );
     }
 }
