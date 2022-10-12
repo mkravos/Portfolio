@@ -3,13 +3,19 @@ import background from "../assets/SplashBackground.jpg";
 import profileImage from "../assets/MajProfile.png";
 import React, {useState} from "react";
 import { isMobile } from "react-device-detect";
-import Welcome from "./Welcome"
+import Welcome from "./Welcome";
+import ContactForm from "./ContactForm";
+import FeaturedProjects from "./FeaturedProjects";
 
 export default function Profile() {
     const [renderWelcome, setRender] = useState(false);
+    const [renderContactForm, setRenderContactForm] = useState(false);
+    const [renderFeaturedProjects, setRenderFeaturedProjects] = useState(false);
     const onShow = React.useCallback(() => setRender(true), []);
+    const onShowContactForm = React.useCallback(() => setRenderContactForm(true), []);
+    const onShowFeaturedProjects = React.useCallback(() => setRenderFeaturedProjects(true), []);
 
-    if(!renderWelcome) {
+    if(!renderWelcome && !renderContactForm && !renderFeaturedProjects) {
         if(!isMobile) {
             return (
                 <header className="App-header Content-page">
@@ -23,13 +29,13 @@ export default function Profile() {
                         <div className="location">Profile</div>
                     </div>
                     <div className="Home-content-desktop">
-                    <div className="Profile-header-mobile">
+                        <div className="Profile-header-mobile">
                             <img className="Profile-photo-mobile" alt="profile" src={profileImage}/>
                             <div className="Profile-header-text">
                                 <div className="Large-mobile-text">Maj Kravos</div>
                                 <div className="Muted-mobile-text">Chicago, IL, United States</div>
                                 <div className="Muted-mobile-text"><a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                                <button className="Contact-button-mobile">Contact Me</button>
+                                <button className="Contact-button-mobile" onClick={onShowContactForm}>Contact Me</button>
                             </div>
                         </div>
                         <div className="Profile-description-mobile">
@@ -61,7 +67,7 @@ export default function Profile() {
                                 <p className="Sub-description-mobile-text">Northern Illinois University: Bachelor of Science in Computer Science</p>
                             </center>
                         </div>
-                        <button className="Projects-button-mobile">View My Projects</button>
+                        <button className="Projects-button-mobile" onClick={onShowFeaturedProjects}>View My Projects</button>
                     </div>
                 </header>
             );
@@ -84,7 +90,7 @@ export default function Profile() {
                                 <div className="Large-mobile-text">Maj Kravos</div>
                                 <div className="Muted-mobile-text">Chicago, IL, United States</div>
                                 <div className="Muted-mobile-text"><a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                                <button className="Contact-button-mobile">Contact Me</button>
+                                <button className="Contact-button-mobile" onClick={onShowContactForm}>Contact Me</button>
                             </div>
                         </div>
                         <div className="Profile-description-mobile">
@@ -116,14 +122,22 @@ export default function Profile() {
                                 <p className="Sub-description-mobile-text">Northern Illinois University: Bachelor of Science in Computer Science</p>
                             </center>
                         </div>
-                        <button className="Projects-button-mobile">View My Projects</button>
+                        <button className="Projects-button-mobile" onClick={onShowFeaturedProjects}>View My Projects</button>
                     </div>
                 </header>
             );
         }
-    } else {
-        return(
+    } else if(renderWelcome) {
+        return (
             <Welcome/>
+        );
+    } else if(renderContactForm) {
+        return (
+            <ContactForm/>
+        );
+    } else if(renderFeaturedProjects) {
+        return (
+            <FeaturedProjects/>
         );
     }
 }
