@@ -11,7 +11,7 @@ export default function Welcome() {
     if(!renderHome) {
         return (
             <header className="App-header Welcome-page">
-                <img className='background' alt='background' src={background}/>
+                { !isMobile ? <img className='background-desktop' alt='background' src={background}/> : <img className='background-mobile' alt='background' src={background}/>}
                 <div className="Welcome-content">
                     <center>
                         <h1 className="Welcome-heading">Maj Kravos</h1>

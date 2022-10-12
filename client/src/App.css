@@ -27,19 +27,18 @@ a {
   -webkit-user-select: none;
   -ms-user-select: none;
   opacity: 0.2;
-  position: relative;
-  height: 945px;
+  height: 100vh;
 }
 
-.background {
+.background-desktop {
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   opacity: 0.2;
-  position: relative;
   height: 100vh;
+  width: 100vw;
 }
 
 .Location-bar {
@@ -47,12 +46,26 @@ a {
   position: absolute;
   align-items: center;
   justify-content: center;
-  width: 95vw;
-  height: 45px;
-  margin-top: 20px;
+  width: 100vw;
+  height: 65px;
+  background-color: rgba(0, 123, 255, 0.621);
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
 }
 .location {
   font-size: 35px;
+  z-index: 0;
+}
+.Location-bar .Location-bar-background {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  opacity: 0.2;
+  position: inherit;
+  width: 100vw;
+  height: 65px;
+  object-fit: cover;
 }
 
 .Back-btn-desktop {
