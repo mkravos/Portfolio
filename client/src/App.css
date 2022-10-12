@@ -43,17 +43,18 @@ a {
 
 .Location-bar {
   display: flex;
-  position: absolute;
+  position: fixed;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 65px;
   background-color: rgba(0, 123, 255, 0.621);
   box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
+  z-index: 1;
 }
 .location {
   font-size: 35px;
-  z-index: 0;
+  z-index: 1;
 }
 .Location-bar .Location-bar-background {
   -webkit-user-drag: none;
