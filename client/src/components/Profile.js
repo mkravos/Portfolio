@@ -29,22 +29,25 @@ export default function Profile() {
                         <div className="location">Profile</div>
                     </div>
                     <div className="Home-content-desktop">
-                        <div className="Profile-header-mobile">
-                            <img className="Profile-photo-mobile" alt="profile" src={profileImage}/>
-                            <div className="Profile-header-text-desktop">
-                                <div className="Large-mobile-text">Maj Kravos</div>
-                                <div className="Muted-mobile-text">Chicago, IL, United States</div>
-                                <div className="Muted-mobile-text"><a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-                                <div className="Profile-header-buttons-desktop">
-                                    <button className="Contact-button-mobile" onClick={onShowContactForm}>Contact Me</button>
-                                    <button className="Projects-button-desktop" onClick={onShowFeaturedProjects}>View My Projects</button>
+                        <div className="Header-image"/>
+                        <div className="Profile-header-desktop">
+                            <div className="Profile-header-main">
+                                <img className="Profile-photo-desktop" alt="profile" src={profileImage}/>
+                                <div className="Profile-header-text-desktop">
+                                    <div className="Large-mobile-text">Maj Kravos</div>
+                                    <div className="Muted-mobile-text">Chicago, IL, United States</div>
+                                    <div className="Muted-mobile-text"><a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a></div>
                                 </div>
+                            </div>
+                            <div className="Profile-header-buttons-desktop">
+                                    <button className="Contact-button-desktop" onClick={onShowContactForm}>Contact Me</button>
+                                    <button className="Projects-button-desktop" onClick={onShowFeaturedProjects}>View My Projects</button>
                             </div>
                         </div>
                         <div className="Profile-description-mobile">
                             <center>
                                 <div className="Large-mobile-text">About Me</div>
-                                <p className="Description-mobile-text">
+                                <p className="Description-desktop-text">
                                     I am a Software Engineer with a background in creating web applications from concept to development and deployment, with expertise in front-end, back-end, 
                                     and database development. I enjoy teamwork, learning about new technology, solving problems, and fixing cars. I pride myself in troubleshooting bugs, 
                                     efficiently managing multiple tasks, and delivering quality results in a timely manner. 
@@ -54,20 +57,28 @@ export default function Profile() {
                         <div className="Profile-description-mobile">
                             <center>
                                 <div className="Large-mobile-text">Background</div>
-                                <div className="Subheading-mobile-text">
-                                    Skills
+                                <div className="Profile-description-body-desktop">
+                                    <div className="Description-category">
+                                        <div className="Subheading-mobile-text">
+                                            Skills
+                                        </div>
+                                        <p className="Sub-description-mobile-text">HTML, CSS, JavaScript, Node.js, React, Express, PostgreSQL, Python, Java, C#</p>
+                                    </div>
+                                    <div className="Description-category">
+                                        <div className="Subheading-mobile-text">
+                                            Work
+                                        </div>
+                                        <p className="Sub-description-mobile-text">
+                                            ASAR Digital: Software Engineer
+                                        </p>
+                                    </div>
+                                    <div className="Description-category">
+                                        <div className="Subheading-mobile-text">
+                                            Education
+                                        </div>
+                                        <p className="Sub-description-mobile-text">Northern Illinois University: Bachelor of Science in Computer Science</p>
+                                    </div>
                                 </div>
-                                <p className="Sub-description-mobile-text">HTML, CSS, JavaScript, Node.js, React, Express, PostgreSQL, Python, Java, C#</p>
-                                <div className="Subheading-mobile-text">
-                                    Work
-                                </div>
-                                <p className="Sub-description-mobile-text">
-                                    ASAR Digital: Software Engineer
-                                </p>
-                                <div className="Subheading-mobile-text">
-                                    Education
-                                </div>
-                                <p className="Sub-description-mobile-text">Northern Illinois University: Bachelor of Science in Computer Science</p>
                             </center>
                         </div>
                     </div>

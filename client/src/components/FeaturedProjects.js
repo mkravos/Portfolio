@@ -1,5 +1,7 @@
 import "./style/FeaturedProjects.css";
 import background from "../assets/SplashBackground.jpg";
+import vmt from "../assets/VMT-Dashboard.png";
+import gotodo from "../assets/Go-todo-1.png";
 import React, {useState} from "react";
 import { isMobile } from "react-device-detect";
 import Profile from "./Profile";
@@ -24,7 +26,8 @@ export default function FeaturedProjects() {
                     <div className="Project-content-desktop">
                         <div className="Project-col">
                             <div className="Project-tile-desktop">
-                                <div className="Project-header-mobile">
+                                <a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-desktop"/></a>
+                                <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Vehicle Maintenance Tracker</div>
                                         <div className="Muted-mobile-text">Stack: PostgreSQL, Express, React, Node</div>
@@ -38,7 +41,8 @@ export default function FeaturedProjects() {
                                 </div>
                             </div>
                             <div className="Project-tile-desktop">
-                                <div className="Project-header-mobile">
+                                <a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-desktop"/></a>
+                                <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Go-Todo</div>
                                         <div className="Muted-mobile-text">Stack: PostgreSQL, Go, React</div>
@@ -103,7 +107,8 @@ export default function FeaturedProjects() {
                     </div>
                     <div className="Project-content-mobile">
                         <div className="Project-tile">
-                            <div className="Project-header-mobile">
+                            <a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-mobile"/></a>
+                            <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Vehicle Maintenance Tracker</div>
                                     <div className="Muted-mobile-text">Stack: PostgreSQL, Express, React, Node</div>
@@ -117,7 +122,8 @@ export default function FeaturedProjects() {
                             </div>
                         </div>
                         <div className="Project-tile">
-                            <div className="Project-header-mobile">
+                            <a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-mobile"/></a>
+                            <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Go-Todo</div>
                                     <div className="Muted-mobile-text">Stack: PostgreSQL, Go, React</div>
