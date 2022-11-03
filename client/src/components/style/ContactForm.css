@@ -44,6 +44,35 @@
     font-weight: 1000;
 }
 
+.Form-input-desktop {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 55px;
+    width: 65vw;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 4px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 2px;
+    border: none;
+    font-family: "Abel";
+    font-weight: 1000;
+    font-size: 17px;
+}
+
+.Form-input-big-desktop {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    min-width: 65vw;
+    max-width: 65vw;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 4px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 2px;
+    border: none;
+    font-family: "Abel";
+    font-weight: 1000;
+    font-size: 17px;
+}
+
 .Contact-submitBtn {
     margin-top: 25px;
     margin-bottom: 50px;
@@ -66,5 +95,6 @@
 
 label {
     font-family: "Abel";
+    font-size: 18px;
     color: black;
 }

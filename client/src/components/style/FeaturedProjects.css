@@ -1,0 +1,66 @@
+.Project-content-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 800;
+    width: 85vw;
+    margin-top: 90px;
+}
+
+.Project-content-desktop {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 800;
+    width: 85vw;
+    margin-top: 115px;
+}
+
+.Project-col {
+    display: flex;
+    justify-content: center;
+}
+
+.Project-tile {
+    background-color: rgb(237, 237, 237);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 25px;
+    margin-right: 25px;
+    min-width: 316.75px;
+    max-width: 316.75px;
+}
+
+.Project-tile-desktop {
+    background-color: rgb(237, 237, 237);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 25px;
+    margin-right: 25px;
+    min-width: 40vw;
+    max-width: 40vw;
+}
+
+.Project-header-mobile {
+    display: flex;
+    height: fit-content;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
+    padding-bottom: 15px;
+}
+
+.Project-description {
+    height: fit-content;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.Muted-mobile-description-text {
+    color: rgb(84, 84, 84);
+    font-size: 15px;
+    margin-right: 3.5px;
+}
