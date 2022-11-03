@@ -1,3 +1,4 @@
+import "./style/ContactForm.css";
 import background from "../assets/SplashBackground.jpg";
 import React, {useState} from "react";
 import { isMobile } from "react-device-detect";
@@ -33,6 +34,23 @@ export default function ContactForm() {
                             </svg>
                         </button>
                         <div className="location">Contact Me</div>
+                    </div>
+                    <div className="Form-container-mobile">
+                        <center>
+                            <form className="Contact-form">
+                                <label htmlFor="sender">Name *</label>
+                                <input name="sender" className="Form-input-mobile" type="text" placeholder="Enter your name"></input>
+                                <label htmlFor="company">Company</label>
+                                <input name="company" className="Form-input-mobile" type="text" placeholder="Enter your company"></input>
+                                <label htmlFor="email">Email *</label>
+                                <input name="email" className="Form-input-mobile" type="text" placeholder="Enter your email address"></input>
+                                <label htmlFor="phone">Phone</label>
+                                <input name="phone" className="Form-input-mobile" type="text" placeholder="Enter your phone number"></input>
+                                <label htmlFor="message">Message *</label>
+                                <textarea name="message" className="Form-input-big-mobile" placeholder="Enter your message to me"></textarea>
+                                <div className="Contact-submitBtn-div"><button className="Contact-submitBtn" type="submit">Send Message</button></div>
+                            </form>
+                        </center>
                     </div>
                 </header>
             );

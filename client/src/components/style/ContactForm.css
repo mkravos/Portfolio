@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+.Form-container-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    font-weight: 800;
+    width: 85vw;
+    margin-top: 100px;
+    overflow-y: scroll;
+}
+
+.Contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Form-input-mobile {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 35px;
+    width: 275px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 4px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 2px;
+    border: none;
+    font-family: "Abel";
+    font-weight: 1000;
+}
+
+.Form-input-big-mobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 80px;
+    min-width: 275px;
+    max-width: 275px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 2px 4px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 2px;
+    border: none;
+    font-family: "Abel";
+    font-weight: 1000;
+}
+
+.Contact-submitBtn {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    height: 40px;
+    width: 125px;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: "Abel";
+}
+
+.Contact-submitBtn-div {
+    align-self: center;
+}
+
+label {
+    font-family: "Abel";
+    color: black;
+}
