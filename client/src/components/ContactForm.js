@@ -23,6 +23,7 @@ export default function ContactForm() {
                     </div>
                     <div className="Form-container-mobile">
                         <center>
+                            <div className="Contact-header-text">Please reach out to me if you have any comments, questions, concerns, or proposals!</div>
                             <form className="Contact-form">
                                 <label htmlFor="sender">Name *</label>
                                 <input name="sender" className="Form-input-desktop" type="text" placeholder="Enter your name"></input>
@@ -54,6 +55,7 @@ export default function ContactForm() {
                     </div>
                     <div className="Form-container-mobile">
                         <center>
+                            <div className="Contact-header-text-mobile">Please reach out to me if you have any comments, questions, concerns, or proposals!</div>
                             <form className="Contact-form">
                                 <label htmlFor="sender">Name *</label>
                                 <input name="sender" className="Form-input-mobile" type="text" placeholder="Enter your name"></input>
