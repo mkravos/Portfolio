@@ -228,7 +228,7 @@
     background-color: rgb(35, 35, 35);
     color: white;
     height: 25px;
-    width: 125px;
+    width: fit-content;
     font-size: 15px;
     font-weight: 800;
     font-family: "Abel";
