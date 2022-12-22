@@ -104,6 +104,7 @@ export default function Profile() {
                                 <div className="Muted-mobile-text">Chicago, IL, United States</div>
                                 <div className="Muted-mobile-text"><a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a></div>
                                 {/* <button className="Contact-button-mobile" onClick={onShowContactForm}>Contact Me</button> */}
+                                <button className="Projects-button-mobile" onClick={onShowFeaturedProjects}>View My Projects</button>
                             </div>
                         </div>
                         <div className="Profile-description-mobile">
@@ -135,7 +136,6 @@ export default function Profile() {
                                 <p className="Sub-description-mobile-text">Northern Illinois University: Bachelor of Science in Computer Science</p>
                             </center>
                         </div>
-                        <button className="Projects-button-mobile" onClick={onShowFeaturedProjects}>View My Projects</button>
                     </div>
                 </header>
             );

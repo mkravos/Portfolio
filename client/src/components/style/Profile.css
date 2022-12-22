@@ -92,8 +92,8 @@
 }
 
 .Profile-photo-desktop {
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 150px;
     border: 0.5px solid black;
     border-radius: 20px;
     border-top-left-radius: 0px;
@@ -222,17 +222,16 @@
 
 .Projects-button-mobile {
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-top: 10px;
     border: none;
     border-radius: 5px;
     background-color: rgb(35, 35, 35);
     color: white;
-    height: 50px;
-    width: 45vw;
+    height: 25px;
+    width: 125px;
     font-size: 15px;
     font-weight: 800;
     font-family: "Abel";
-    align-self: center;
 }
 
 .Projects-button-desktop {
