@@ -69,7 +69,8 @@ export default function Profile() {
                                             Work
                                         </div>
                                         <p className="Sub-description-mobile-text">
-                                            ASAR Digital: Software Engineer
+                                            <a className="companyLink" href="https://www.linkedin.com/company/percipia" target="_blank" rel="noopener noreferrer">Percipia</a>- Software Engineer (2023-Present)
+                                            <a className="companyLink-margin" href="https://www.linkedin.com/company/asar-digital" target="_blank" rel="noopener noreferrer">ASAR Digital</a>- Software Engineer (2022-2023)
                                         </p>
                                     </div>
                                     <div className="Description-category">
@@ -128,7 +129,8 @@ export default function Profile() {
                                     Work
                                 </div>
                                 <p className="Sub-description-mobile-text">
-                                    ASAR Digital: Software Engineer
+                                    <a className="companyLink" href="https://www.linkedin.com/company/percipia" target="_blank" rel="noopener noreferrer">Percipia</a>- Software Engineer (2023-Present)
+                                    <a className="companyLink" href="https://www.linkedin.com/company/asar-digital" target="_blank" rel="noopener noreferrer">ASAR Digital</a>- Software Engineer (2022-2023)
                                 </p>
                                 <div className="Subheading-mobile-text">
                                     Education

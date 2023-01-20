@@ -157,11 +157,19 @@
 
 .Sub-description-mobile-text {
     display: flex;
+    flex-direction: column;
     color: rgb(48, 48, 48);
     font-size: 15px;
     text-align: left;
     width: 90%;
     margin-left: 15px;
+}
+
+.companyLink {
+    font-size: 16px;
+}
+.companyLink-margin {
+    margin-top: 5px;
 }
 
 .Subheading-mobile-text {
