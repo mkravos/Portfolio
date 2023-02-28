@@ -2,6 +2,8 @@ import "./style/FeaturedProjects.css";
 import background from "../assets/SplashBackground.jpg";
 import vmt from "../assets/VMT-Dashboard.png";
 import gotodo from "../assets/Go-todo-1.png";
+import notsudoku from "../assets/Notsudoku.png";
+import pd from "../assets/PD.png";
 import React, {useState} from "react";
 import { isMobile } from "react-device-detect";
 import Profile from "./Profile";
@@ -58,7 +60,8 @@ export default function FeaturedProjects() {
                         </div>
                         <div className="Project-col">
                             <div className="Project-tile-desktop">
-                                <div className="Project-header-mobile">
+                                <a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-desktop"/></a>
+                                <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Not-Sudoku</div>
                                         <div className="Muted-mobile-text">Language: C#</div>
@@ -72,7 +75,8 @@ export default function FeaturedProjects() {
                                 </div>
                             </div>
                             <div className="Project-tile-desktop">
-                                <div className="Project-header-mobile">
+                                <a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-desktop"/></a>
+                                <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Prisoner's Dilemma</div>
                                         <div className="Muted-mobile-text">Language: Java</div>
@@ -137,7 +141,8 @@ export default function FeaturedProjects() {
                             </div>
                         </div>
                         <div className="Project-tile">
-                            <div className="Project-header-mobile">
+                            <a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-mobile"/></a>
+                            <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Not-Sudoku</div>
                                     <div className="Muted-mobile-text">Language: C#</div>
@@ -151,7 +156,8 @@ export default function FeaturedProjects() {
                             </div>
                         </div>
                         <div className="Project-tile">
-                            <div className="Project-header-mobile">
+                            <a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-mobile"/></a>
+                            <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Prisoner's Dilemma</div>
                                     <div className="Muted-mobile-text">Language: Java</div>
