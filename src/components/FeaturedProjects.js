@@ -28,7 +28,7 @@ export default function FeaturedProjects() {
                     <div className="Project-content-desktop">
                         <div className="Project-col">
                             <div className="Project-tile-desktop">
-                                <a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-desktop"/></a>
+                                <center><a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-desktop"/></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Vehicle Maintenance Tracker</div>
@@ -43,7 +43,7 @@ export default function FeaturedProjects() {
                                 </div>
                             </div>
                             <div className="Project-tile-desktop">
-                                <a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-desktop"/></a>
+                                <center><a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-desktop"/></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Go-Todo</div>
@@ -60,7 +60,7 @@ export default function FeaturedProjects() {
                         </div>
                         <div className="Project-col">
                             <div className="Project-tile-desktop">
-                                <a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-desktop"/></a>
+                                <center><a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-desktop"/></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Not-Sudoku</div>
@@ -75,7 +75,7 @@ export default function FeaturedProjects() {
                                 </div>
                             </div>
                             <div className="Project-tile-desktop">
-                                <a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-desktop"/></a>
+                                <center><a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-desktop"/></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Prisoner's Dilemma</div>

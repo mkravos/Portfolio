@@ -13,7 +13,7 @@
     position: absolute;
     font-weight: 800;
     width: 85vw;
-    margin-top: 115px;
+    margin-top: 90px;
 }
 
 .Project-col {
@@ -33,6 +33,7 @@
 }
 
 .Project-tile-desktop {
+    overflow: hidden;
     background-color: rgb(237, 237, 237);
     border: 1px solid black;
     border-radius: 20px;
@@ -75,11 +76,10 @@
 }
 
 .Project-image-desktop {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
     border-bottom: 1px solid black;
-    height: 335px;
-    width: 40vw;
+    height: 350px;
+    width: auto;
+    max-width: 100%;
     margin-bottom: -10px;
 }
 
@@ -88,6 +88,6 @@
     border-top-right-radius: 20px;
     border-bottom: 1px solid black;
     height: auto;
-    width: 316.75px;
+    width: 100%;
     margin-bottom: -10px;
 }
