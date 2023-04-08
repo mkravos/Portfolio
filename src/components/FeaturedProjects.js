@@ -53,7 +53,7 @@ export default function FeaturedProjects() {
                                 </div>
                                 <div className="Project-description">
                                     <div className="Profile-header-text">
-                                        <div className="Muted-mobile-description-text">A simple dockerized todo list app I wrote while learning Golang.</div>
+                                        <div className="Muted-mobile-description-text">An easy-to-use, Dockerized todo list app I wrote while learning Golang.</div>
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@ export default function FeaturedProjects() {
                                 </div>
                                 <div className="Project-description">
                                     <div className="Profile-header-text">
-                                        <div className="Muted-mobile-description-text">A Prisoner's Dilemma game developed using Java and JSwing.</div>
+                                        <div className="Muted-mobile-description-text">A rendition of the Prisoner's Dilemma thought experiment in the form of a game, developed using Java and JSwing.</div>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ export default function FeaturedProjects() {
                             </div>
                             <div className="Project-description">
                                 <div className="Profile-header-text">
-                                    <div className="Muted-mobile-description-text">A simple dockerized todo list app I wrote while learning Golang.</div>
+                                    <div className="Muted-mobile-description-text">An easy-to-use, Dockerized todo list app I wrote while learning Golang.</div>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +166,7 @@ export default function FeaturedProjects() {
                             </div>
                             <div className="Project-description">
                                 <div className="Profile-header-text">
-                                    <div className="Muted-mobile-description-text">A Prisoner's Dilemma game developed using Java and JSwing.</div>
+                                    <div className="Muted-mobile-description-text">A rendition of the Prisoner's Dilemma thought experiment in the form of a game, developed using Java and JSwing.</div>
                                 </div>
                             </div>
                         </div>
