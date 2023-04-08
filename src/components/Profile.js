@@ -62,7 +62,7 @@ export default function Profile() {
                                         <div className="Subheading-mobile-text">
                                             Skills
                                         </div>
-                                        <p className="Sub-description-mobile-text">HTML, CSS, JavaScript, Node.js, React, Express, PostgreSQL, Python, Java, C#</p>
+                                        <p className="Sub-description-mobile-text">JavaScript, React, Node.js, Python, Go, Java, Android, HTML, CSS, PostgreSQL, Express, Flask, C#, .NET, C++, Docker, AWS, Azure</p>
                                     </div>
                                     <div className="Description-category">
                                         <div className="Subheading-mobile-text">
@@ -124,7 +124,7 @@ export default function Profile() {
                                 <div className="Subheading-mobile-text">
                                     Skills
                                 </div>
-                                <p className="Sub-description-mobile-text">HTML, CSS, JavaScript, Node.js, React, Express, PostgreSQL, Python, Java, C#</p>
+                                <p className="Sub-description-mobile-text">JavaScript, React, Node.js, Python, Go, Java, Android, HTML, CSS, PostgreSQL, Express, Flask, C#, .NET, C++, Docker, AWS, Azure</p>
                                 <div className="Subheading-mobile-text">
                                     Work
                                 </div>
