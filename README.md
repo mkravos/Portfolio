@@ -1,5 +1,5 @@
 # Portfolio
 
-My personal portfolio website, accessible at: https://www.majkravos.com
+My personal portfolio website, accessible at: https://www.majkravos.com.
 
-This project was built using React and is continuously deployed from this GitHub repository.
+This project was built as a single-page React app and is continuously deployed from this GitHub repository.
