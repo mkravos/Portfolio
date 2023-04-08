@@ -198,15 +198,19 @@
     }
 }
 
+.PHeader-buttons-mobile {
+    display: flex;
+}
+
 .Contact-button-mobile {
     cursor: pointer;
     margin-top: 10px;
+    margin-right: 5px;
     border: none;
     border-radius: 5px;
     background-color: rgb(35, 35, 35);
     color: white;
     height: 25px;
-    width: 100px;
     font-size: 15px;
     font-weight: 800;
     font-family: "Abel";

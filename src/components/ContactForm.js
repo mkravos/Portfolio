@@ -7,6 +7,33 @@ import Profile from "./Profile";
 export default function ContactForm() {
     const [renderProfile, setRender] = useState(false);
     const onShow = React.useCallback(() => setRender(true), []);
+    
+    const [form, setForm] = useState({
+        sender:"",
+        company:"",
+        email:"",
+        phone:"",
+        message:"",
+    });
+
+    function onSubmit(e, token) {
+        // prevent refresh
+        e.preventDefault();
+
+        // do something with the values
+        console.log(form);
+
+        // clear the form
+        setForm({
+            sender:"",
+            company:"",
+            email:"",
+            phone:"",
+            message:"",
+        });
+
+        return;
+    }
 
     if(!renderProfile) {
         if(!isMobile) {
@@ -21,21 +48,22 @@ export default function ContactForm() {
                         </button>
                         <div className="location">Contact Me</div>
                     </div>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     <div className="Form-container-mobile">
                         <center>
                             <div className="Contact-header-text">Please reach out to me if you have any comments, questions, concerns, or proposals!</div>
                             <form className="Contact-form">
                                 <label htmlFor="sender">Name *</label>
-                                <input name="sender" className="Form-input-desktop" type="text" placeholder="Enter your name"></input>
+                                <input required name="sender" className="Form-input-desktop" type="text" placeholder="Enter your name" value={form.sender} onChange={e => setForm({...form, sender: e.target.value})}></input>
                                 <label htmlFor="company">Company</label>
-                                <input name="company" className="Form-input-desktop" type="text" placeholder="Enter your company"></input>
+                                <input name="company" className="Form-input-desktop" type="text" placeholder="Enter your company" value={form.company} onChange={e => setForm({...form, company: e.target.value})}></input>
                                 <label htmlFor="email">Email *</label>
-                                <input name="email" className="Form-input-desktop" type="text" placeholder="Enter your email address"></input>
+                                <input required name="email" className="Form-input-desktop" type="text" placeholder="Enter your email address" value={form.email} onChange={e => setForm({...form, email: e.target.value})}></input>
                                 <label htmlFor="phone">Phone</label>
-                                <input name="phone" className="Form-input-desktop" type="text" placeholder="Enter your phone number"></input>
+                                <input name="phone" className="Form-input-desktop" type="text" placeholder="Enter your phone number" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})}></input>
                                 <label htmlFor="message">Message *</label>
-                                <textarea name="message" className="Form-input-big-desktop" placeholder="Enter your message to me"></textarea>
-                                <div className="Contact-submitBtn-div"><button className="Contact-submitBtn" type="submit">Send Message</button></div>
+                                <textarea required name="message" className="Form-input-big-desktop" placeholder="Enter your message to me" value={form.message} onChange={e => setForm({...form, message: e.target.value})}></textarea>
+                                <div className="Contact-submitBtn-div"><submit className="Contact-submitBtn g-recaptcha" data-sitekey="your_site_key" onClick={onSubmit}>Send Message</submit></div>
                             </form>
                         </center>
                     </div>
@@ -58,16 +86,16 @@ export default function ContactForm() {
                             <div className="Contact-header-text-mobile">Please reach out to me if you have any comments, questions, concerns, or proposals!</div>
                             <form className="Contact-form">
                                 <label htmlFor="sender">Name *</label>
-                                <input name="sender" className="Form-input-mobile" type="text" placeholder="Enter your name"></input>
+                                <input required name="sender" className="Form-input-mobile" type="text" placeholder="Enter your name" value={form.sender} onChange={e => setForm({...form, sender: e.target.value})}></input>
                                 <label htmlFor="company">Company</label>
-                                <input name="company" className="Form-input-mobile" type="text" placeholder="Enter your company"></input>
+                                <input name="company" className="Form-input-mobile" type="text" placeholder="Enter your company" value={form.company} onChange={e => setForm({...form, company: e.target.value})}></input>
                                 <label htmlFor="email">Email *</label>
-                                <input name="email" className="Form-input-mobile" type="text" placeholder="Enter your email address"></input>
+                                <input required name="email" className="Form-input-mobile" type="text" placeholder="Enter your email address" value={form.email} onChange={e => setForm({...form, email: e.target.value})}></input>
                                 <label htmlFor="phone">Phone</label>
-                                <input name="phone" className="Form-input-mobile" type="text" placeholder="Enter your phone number"></input>
-                                <label htmlFor="message">Message *</label>
-                                <textarea name="message" className="Form-input-big-mobile" placeholder="Enter your message to me"></textarea>
-                                <div className="Contact-submitBtn-div"><button className="Contact-submitBtn" type="submit">Send Message</button></div>
+                                <input name="phone" className="Form-input-mobile" type="text" placeholder="Enter your phone number" value={form.phone} onChange={e => setForm({...form, phone: e.target.value})}></input>
+                                <label required htmlFor="message">Message *</label>
+                                <textarea name="message" className="Form-input-big-mobile" placeholder="Enter your message to me" value={form.message} onChange={e => setForm({...form, message: e.target.value})}></textarea>
+                                <div className="Contact-submitBtn-div"><submit className="Contact-submitBtn g-recaptcha" data-sitekey="your_site_key" onClick={onSubmit}>Send Message</submit></div>
                             </form>
                         </center>
                     </div>
