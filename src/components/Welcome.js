@@ -18,7 +18,7 @@ export default function Welcome() {
                         <div className="Welcome-introduction">
                             <p>Hi, I am Maj, a Software Engineer specializing in web and mobile app development.</p>
                         </div>
-                        <button className="Proceed-button" onClick={onShow}>Proceed</button>
+                        <button className="Proceed-button" onClick={onShow}>Take A Look</button>
                     </center>
                     { !isMobile ? null : // mobile
                         <center>
