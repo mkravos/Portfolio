@@ -29,6 +29,7 @@ export default function Profile() {
         <>
             <a className="companyLink" href="https://www.linkedin.com/company/percipia" target="_blank" rel="noopener noreferrer">Percipia</a>- Software Engineer (2023-Present)
             <a className="companyLink-margin" href="https://www.linkedin.com/company/asar-digital" target="_blank" rel="noopener noreferrer">ASAR Digital</a>- Software Engineer (2022-2023)
+            <a className="companyLink-margin" href="https://www.niu.edu/doit/" target="_blank" rel="noopener noreferrer">Northern Illinois University</a>- Service Desk Analyst (2019-2021)
         </>
     )
     const education = useState(
