@@ -72,14 +72,11 @@
 
 .Profile-description-body-desktop {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-right: 3vw;
     padding-left: 3vw;
     margin-top: 25px;
-}
-
-.Description-category {
-    max-width: 20vw;
 }
 
 .Profile-photo-mobile {
@@ -166,16 +163,18 @@
 }
 
 .companyLink {
+    width: fit-content;
     font-size: 16px;
 }
 .companyLink-margin {
+    width: fit-content;
     margin-top: 5px;
 }
 
 .Subheading-mobile-text {
     display: flex;
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 18px;
     text-align: left;
     width: 90%;
 }
