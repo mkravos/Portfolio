@@ -58,11 +58,13 @@
 
 .Proceed-button {
     margin-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     height: 50px;
-    width: 100px;
+    width: fit-content;
     background-color: rgb(255, 255, 255);
     color: black;
     font-size: 16px;
