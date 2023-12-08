@@ -264,3 +264,49 @@
 .Profile-header-main {
     display: flex;
 }
+
+.skillsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.skillGo {
+    width: 80px;
+}
+.skillNode {
+    width: 115px;
+    margin-top: -8px;
+}
+.skillJS {
+    width: 45px;
+}
+.skillReact {
+    width: 55px;
+}
+.skillAndroid {
+    width: 55px;
+}
+.skillIOS {
+    width: 50px;
+    margin-top: -8px;
+}
+.skillPy {
+    width: 55px;
+}
+.skillCpp {
+    width: 50px;
+    margin-top: -5px;
+}
+.skillCsh {
+    width: 50px;
+    margin-top: -5px;
+}
+.skillPsql {
+    width: 55px;
+}
+.skillDocker {
+    width: 55px;
+}
+.skillAWS {
+    width: 100px;
+}

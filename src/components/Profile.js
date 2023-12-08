@@ -24,7 +24,28 @@ export default function Profile() {
         </>
     )
     const aboutMe = "Passionate and results-driven Software Engineer with a solid two-year foundation in full stack development. Demonstrates exceptional leadership skills, guiding projects seamlessly from ideation to deployment. Proficient in front-end, back-end, mobile, and database development, complemented by a strong emphasis on effective communication and collaboration."
-    const skills = "- Go, Node.js, Java, JavaScript, React, Android, Python, Docker, HTML, CSS, PostgreSQL, C#, C++, iOS, PHP, .NET, Express.js, Flask, Azure, Redux, AWS Cloud, Azure Cloud, SAP, Linux, Git, CI/CD"
+    const skills =
+        <>
+        {
+        !isMobile ?
+            <div className="skillsContainer">
+                <img className="skillJS" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <img className="skillGo" alt="go" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" />
+                <img className="skillNode" alt="node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+                <img className="skillReact" alt="react.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                <img className="skillPsql" alt="postgresql" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+                <img className="skillDocker" alt="docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" />
+                <img className="skillAWS" alt="aws cloud" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                <img className="skillAndroid" alt="android" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg" />
+                <img className="skillIOS" alt="ios" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" />
+                <img className="skillPy" alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                <img className="skillCpp" alt="c plus plus" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" />
+                <img className="skillCsh" alt="c sharp" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" />
+            </div>
+        :
+            <div>JavaScript, Go, Node.js, React, PostgreSQL, Docker, AWS, Android, iOS, Python, C++, C#</div>
+        }
+        </>
     const work = useState(
         <>
             <a className="companyLink" href="https://www.linkedin.com/company/percipia" target="_blank" rel="noopener noreferrer">Percipia</a>- Software Engineer (2023-Present)
