@@ -23,8 +23,8 @@ export default function Profile() {
             <a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a>
         </>
     )
-    const aboutMe = "As an experienced Software Engineer, I have a proven track record of creating high-quality applications from concept to development and deployment. My experience spans across front-end, back-end, mobile, and database development, and I pride myself on being a versatile team player who thrives in collaborative environments. I'm always eager to learn about new technology and tackle new challenges. I'm a self starter skilled at troubleshooting bugs and managing multiple tasks efficiently, and I strive to deliver high-quality results in a timely manner. If you are seeking a reliable and skilled Software Engineer to enhance your team's capabilities, I invite you to contact me to discuss how I can contribute to your organization's success."
-    const skills = "- Go, Java, React.js, Node.js, Android, Python, Docker, AWS, HTML, CSS, JavaScript, PostgreSQL, Express.js, Flask, C#, C++, Azure"
+    const aboutMe = "Passionate and results-driven Software Engineer with a solid two-year foundation in full stack development. Demonstrates exceptional leadership skills, guiding projects seamlessly from ideation to deployment. Proficient in front-end, back-end, mobile, and database development, complemented by a strong emphasis on effective communication and collaboration."
+    const skills = "- Go, Node.js, Java, JavaScript, React, Android, Python, Docker, HTML, CSS, PostgreSQL, C#, C++, iOS, PHP, .NET, Express.js, Flask, Azure, Redux, AWS Cloud, Azure Cloud, SAP, Linux, Git, CI/CD"
     const work = useState(
         <>
             <a className="companyLink" href="https://www.linkedin.com/company/percipia" target="_blank" rel="noopener noreferrer">Percipia</a>- Software Engineer (2023-Present)
@@ -81,7 +81,7 @@ export default function Profile() {
                                 <div className="Profile-description-body-desktop">
                                     <div className="Description-category">
                                         <div className="Subheading-mobile-text">
-                                            Skills
+                                            Technologies
                                         </div>
                                         <p className="Sub-description-mobile-text">{skills}</p>
                                     </div>
@@ -140,7 +140,7 @@ export default function Profile() {
                             <center>
                                 <div className="Large-mobile-text">Background</div>
                                 <div className="Subheading-mobile-text">
-                                    Skills
+                                    Technologies
                                 </div>
                                 <p className="Sub-description-mobile-text">{skills}</p>
                                 <div className="Subheading-mobile-text">
