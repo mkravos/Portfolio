@@ -131,7 +131,7 @@ export default function FeaturedProjects() {
                                 </div>
                                 <div className="Project-description">
                                     <div className="Profile-header-text">
-                                        <div className="Muted-mobile-description-text">Developed customized versions of the application for end customers such as Mark Hotel New York, completed numerous hospitality-focused API integrations, and kept the codebase up to date and free of bugs. Developed new features and components for the Latitude/Viva Content Management System web app.</div>
+                                        <div className="Muted-mobile-description-text">Developed customized versions of the application for end customers, completed numerous hospitality-focused API integrations, and kept the codebase up to date and free of bugs. Developed new features and components for the Latitude/Viva Content Management System web app.</div>
                                     </div>
                                 </div>
                             </div>
@@ -288,7 +288,7 @@ export default function FeaturedProjects() {
                             </div>
                             <div className="Project-description">
                                 <div className="Profile-header-text">
-                                    <div className="Muted-mobile-description-text">Developed customized versions of the application for end customers such as Mark Hotel New York, completed numerous hospitality-focused API integrations, and kept the codebase up to date and free of bugs. Developed new features and components for the Latitude/Viva Content Management System web app.</div>
+                                    <div className="Muted-mobile-description-text">Developed customized versions of the application for end customers, completed numerous hospitality-focused API integrations, and kept the codebase up to date and free of bugs. Developed new features and components for the Latitude/Viva Content Management System web app.</div>
                                 </div>
                             </div>
                         </div>
