@@ -38,7 +38,19 @@
     margin-bottom: 25px;
     margin-right: 25px;
     width: 605px;
-    height: 575px;
+    height: 600px;
+}
+
+.Project-tile-2-desktop {
+    overflow: hidden;
+    background-color: rgb(237, 237, 237);
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 25px;
+    margin-right: 25px;
+    width: 605px;
+    height: 260px;
 }
 
 .Project-header-mobile {
@@ -87,4 +99,34 @@
     height: auto;
     width: 100%;
     margin-bottom: -10px;
+}
+
+.Featured-heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Project-category {
+    margin-bottom: 20px;
+    color: black;
+    position: relative;
+}
+
+.Project-category::before,
+.Project-category::after {
+    content: '';
+    position: absolute;
+    left: -5%;
+    right: -5%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Project-category::before {
+    top: -10px;
+}
+
+.Project-category::after {
+    bottom: -10px;
 }
