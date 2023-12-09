@@ -4,23 +4,23 @@ import vmt from "../assets/VMT-Dashboard.png";
 import gotodo from "../assets/Go-todo-1.png";
 import notsudoku from "../assets/Notsudoku.png";
 import pd from "../assets/PD.png";
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { isMobile } from "react-device-detect";
 import Profile from "./Profile";
 
 export default function FeaturedProjects() {
     const [renderProfile, setRender] = useState(false);
     const onShow = React.useCallback(() => setRender(true), []);
-    
-    if(!renderProfile) {
-        if(!isMobile) {
+
+    if (!renderProfile) {
+        if (!isMobile) {
             return (
                 <header className="App-header Content-page">
                     <div className="Location-bar">
-                        <img className='Location-bar-background' alt='background' src={background}/>
+                        <img className='Location-bar-background' alt='background' src={background} />
                         <button className="Back-btn-desktop" onClick={onShow}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi-arrow-left-short" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                             </svg>
                         </button>
                         <div className="location">Projects</div>
@@ -28,7 +28,7 @@ export default function FeaturedProjects() {
                     <div className="Project-content-desktop">
                         <div className="Project-col">
                             <div className="Project-tile-desktop">
-                                <center><a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-desktop"/></a></center>
+                                <center><a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-desktop" /></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Vehicle Maintenance Tracker</div>
@@ -38,12 +38,12 @@ export default function FeaturedProjects() {
                                 </div>
                                 <div className="Project-description">
                                     <div className="Profile-header-text">
-                                        <div className="Muted-mobile-description-text">A vehicle maintenance tracking web application that is currently under development. This project's goal is to simplify maintenance record keeping for hobbyist mechanics.</div>
+                                        <div className="Muted-mobile-description-text">An application for tracking vehicle maintenance items such as oil changes, filter changes, or any other services performed on a vehicle. Notifies the user of upcoming service intervals for each tracked vehicle and service item. Each user has an account so they can easily manage their records.</div>
                                     </div>
                                 </div>
                             </div>
                             <div className="Project-tile-desktop">
-                                <center><a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-desktop"/></a></center>
+                                <center><a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-desktop" /></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Go-Todo</div>
@@ -60,7 +60,7 @@ export default function FeaturedProjects() {
                         </div>
                         <div className="Project-col">
                             <div className="Project-tile-desktop">
-                                <center><a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-desktop"/></a></center>
+                                <center><a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-desktop" /></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Not-Sudoku</div>
@@ -75,7 +75,7 @@ export default function FeaturedProjects() {
                                 </div>
                             </div>
                             <div className="Project-tile-desktop">
-                                <center><a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-desktop"/></a></center>
+                                <center><a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-desktop" /></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
                                         <div className="Large-mobile-text">Prisoner's Dilemma</div>
@@ -101,17 +101,17 @@ export default function FeaturedProjects() {
             return (
                 <header className="App-header Content-page">
                     <div className="Location-bar">
-                        <img className='Location-bar-background' alt='background' src={background}/>
+                        <img className='Location-bar-background' alt='background' src={background} />
                         <button className="Back-btn-mobile" onClick={onShow}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi-arrow-left-short" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
                             </svg>
                         </button>
                         <div className="location">Projects</div>
                     </div>
                     <div className="Project-content-mobile">
                         <div className="Project-tile">
-                            <a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-mobile"/></a>
+                            <a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-mobile" /></a>
                             <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Vehicle Maintenance Tracker</div>
@@ -121,12 +121,12 @@ export default function FeaturedProjects() {
                             </div>
                             <div className="Project-description">
                                 <div className="Profile-header-text">
-                                    <div className="Muted-mobile-description-text">A vehicle maintenance tracking web application that is currently under development. This project's goal is to simplify maintenance record keeping for hobbyist mechanics.</div>
+                                    <div className="Muted-mobile-description-text">An application for tracking vehicle maintenance items such as oil changes, filter changes, or any other services performed on a vehicle. Notifies the user of upcoming service intervals for each tracked vehicle and service item. Each user has an account so they can easily manage their records.</div>
                                 </div>
                             </div>
                         </div>
                         <div className="Project-tile">
-                            <a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-mobile"/></a>
+                            <a href={gotodo} target="_blank" rel="noopener noreferrer"><img src={gotodo} alt="Go-Todo" className="Project-image-mobile" /></a>
                             <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Go-Todo</div>
@@ -141,7 +141,7 @@ export default function FeaturedProjects() {
                             </div>
                         </div>
                         <div className="Project-tile">
-                            <a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-mobile"/></a>
+                            <a href={notsudoku} target="_blank" rel="noopener noreferrer"><img src={notsudoku} alt="Not Sudoku" className="Project-image-mobile" /></a>
                             <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Not-Sudoku</div>
@@ -156,7 +156,7 @@ export default function FeaturedProjects() {
                             </div>
                         </div>
                         <div className="Project-tile">
-                            <a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-mobile"/></a>
+                            <a href={pd} target="_blank" rel="noopener noreferrer"><img src={pd} alt="Prisoner's Dilemma" className="Project-image-mobile" /></a>
                             <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
                                     <div className="Large-mobile-text">Prisoner's Dilemma</div>
@@ -176,7 +176,7 @@ export default function FeaturedProjects() {
         }
     } else {
         return (
-            <Profile/>
+            <Profile />
         );
     }
 }
