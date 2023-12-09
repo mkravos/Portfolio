@@ -35,10 +35,10 @@ export default function FeaturedProjects() {
                         </center>
                         <div className="Project-col">
                             <div className="Project-tile-desktop">
-                                <center><a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-desktop" /></a></center>
+                                <center><a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Garage" className="Project-image-desktop" /></a></center>
                                 <div className="Project-header-mobile-withimage">
                                     <div className="Profile-header-text">
-                                        <div className="Large-mobile-text">Vehicle Maintenance Tracker</div>
+                                        <div className="Large-mobile-text">Garage</div>
                                         <div className="Muted-mobile-text">Stack: PostgreSQL, Express, React, Node</div>
                                         <div className="Muted-mobile-text"><a href="https://github.com/mkravos/Vehicle-Maintenance-Tracker" target="_blank" rel="noopener noreferrer">GitHub Repository</a></div>
                                     </div>
@@ -196,10 +196,10 @@ export default function FeaturedProjects() {
                             </div>
                         </center>
                         <div className="Project-tile">
-                            <a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Vehicle Maintenance Tracker" className="Project-image-mobile" /></a>
+                            <a href={vmt} target="_blank" rel="noopener noreferrer"><img src={vmt} alt="Garage" className="Project-image-mobile" /></a>
                             <div className="Project-header-mobile-withimage">
                                 <div className="Profile-header-text">
-                                    <div className="Large-mobile-text">Vehicle Maintenance Tracker</div>
+                                    <div className="Large-mobile-text">Garage</div>
                                     <div className="Muted-mobile-text">Stack: PostgreSQL, Express, React, Node</div>
                                     <div className="Muted-mobile-text"><a href="https://github.com/mkravos/Vehicle-Maintenance-Tracker" target="_blank" rel="noopener noreferrer">GitHub Repository</a></div>
                                 </div>
