@@ -163,7 +163,24 @@ export default function FeaturedProjects() {
                                 </div>
                                 <div className="Project-description">
                                     <div className="Profile-header-text">
-                                        <div className="Muted-mobile-description-text">Developed a proxy server for fetching weather forecasts and serving them to the Latitude mobile application, which pulls real-time weather data from the weather.gov API. Took the project from an early stage of development to completion. </div>
+                                        <div className="Muted-mobile-description-text">Developed a proxy server for fetching weather forecasts and serving them to the Latitude mobile application, which pulls real-time weather data from the weather.gov API. Took the project from an early stage of development to completion.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Project-col">
+                            <div className="Project-tile-2-desktop">
+                                <div className="Project-header-mobile">
+                                    <div className="Profile-header-text">
+                                        <div className="Large-mobile-text">ASARConnect</div>
+                                        <div className="Muted-mobile-text">Employer: ASAR Digital</div>
+                                        <div className="Muted-mobile-text">Technologies: Python, Flask, PostgreSQL, React, Amazon Web Services</div>
+                                        <div className="Muted-mobile-text"><a href="https://www.linkedin.com/company/asar-digital/" target="_blank" rel="noopener noreferrer">Company Information</a></div>
+                                    </div>
+                                </div>
+                                <div className="Project-description">
+                                    <div className="Profile-header-text">
+                                        <div className="Muted-mobile-description-text">Led the design, development, and deployment of a new, cloud-hosted internal tool providing the company with the capability to onboard, keep track of, and manage their freelancers and offshore employees seamlessly. Containerized the application using Docker and deployed it to AWS's Lightsail service.</div>
                                     </div>
                                 </div>
                             </div>
@@ -319,6 +336,21 @@ export default function FeaturedProjects() {
                             <div className="Project-description">
                                 <div className="Profile-header-text">
                                     <div className="Muted-mobile-description-text">Developed a proxy server for fetching weather forecasts and serving them to the Latitude mobile application, which pulls real-time weather data from the weather.gov API. Took the project from an early stage of development to completion. </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="Project-tile">
+                            <div className="Project-header-mobile">
+                                <div className="Profile-header-text">
+                                    <div className="Large-mobile-text">ASARConnect</div>
+                                    <div className="Muted-mobile-text">Employer: ASAR Digital</div>
+                                    <div className="Muted-mobile-text">Technologies: Python, Flask, PostgreSQL, React, Amazon Web Services</div>
+                                    <div className="Muted-mobile-text"><a href="https://www.linkedin.com/company/asar-digital/" target="_blank" rel="noopener noreferrer">Company Information</a></div>
+                                </div>
+                            </div>
+                            <div className="Project-description">
+                                <div className="Profile-header-text">
+                                    <div className="Muted-mobile-description-text">Led the design, development, and deployment of a new, cloud-hosted internal tool providing the company with the capability to onboard, keep track of, and manage their freelancers and offshore employees seamlessly. Containerized the application using Docker and deployed it to AWS's Lightsail service.</div>
                                 </div>
                             </div>
                         </div>
