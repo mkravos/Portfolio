@@ -148,7 +148,7 @@ export default function FeaturedProjects() {
                                 </div>
                                 <div className="Project-description">
                                     <div className="Profile-header-text">
-                                        <div className="Muted-mobile-description-text">Developed new endpoints for the API. Integrated Viva with Frequency PBX to allow hotel guests to initiate outgoing phone calls using an Alexa Echo device. Helped maintain and keep the project up to date with the upstream repository.</div>
+                                        <div className="Muted-mobile-description-text">Developed new endpoints for the API. Integrated Viva with Frequency PBX to allow hotel guests to initiate outgoing phone calls using an Alexa Echo device. Helped maintain and keep the project up to date.</div>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +320,7 @@ export default function FeaturedProjects() {
                             </div>
                             <div className="Project-description">
                                 <div className="Profile-header-text">
-                                    <div className="Muted-mobile-description-text">Developed new endpoints for the API. Integrated Viva with Frequency PBX to allow hotel guests to initiate outgoing phone calls using an Alexa Echo device. Helped maintain and keep the project up to date with the upstream repository.</div>
+                                    <div className="Muted-mobile-description-text">Developed new endpoints for the API. Integrated Viva with Frequency PBX to allow hotel guests to initiate outgoing phone calls using an Alexa Echo device. Helped maintain and keep the project up to date.</div>
                                 </div>
                             </div>
                         </div>
