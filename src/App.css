@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
-.App {
-  font-family: "Abel";
-  background-color: rgba(0, 123, 255, 0.621);
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
-.App-header {
+.App-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
+  font-family: "Abel";
+  background-color: rgba(0, 123, 255, 0.621);
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -52,10 +49,12 @@ a {
   box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
   z-index: 1;
 }
+
 .location {
   font-size: 35px;
   z-index: 1;
 }
+
 .Location-bar .Location-bar-background {
   -webkit-user-drag: none;
   user-select: none;
@@ -80,9 +79,11 @@ a {
   height: fit-content;
   width: fit-content;
 }
+
 .Back-btn-desktop:hover {
   transform: scale(1.1);
 }
+
 .Back-btn-mobile {
   cursor: pointer;
   position: absolute;
@@ -94,6 +95,7 @@ a {
   height: fit-content;
   width: fit-content;
 }
+
 .bi-arrow-left-short {
   width: 50px;
   height: 50px;

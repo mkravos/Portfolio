@@ -141,6 +141,8 @@
     font-size: 16px;
     text-align: left;
     width: 90%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .Description-desktop-text {
@@ -149,6 +151,8 @@
     font-size: 18px;
     text-align: left;
     width: 90%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .Sub-description-mobile-text {
@@ -159,12 +163,15 @@
     text-align: left;
     width: 90%;
     margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .companyLink {
     width: fit-content;
     font-size: 18px;
 }
+
 .companyLink-margin {
     width: fit-content;
     margin-top: 5px;
@@ -225,6 +232,7 @@
     font-weight: 800;
     font-family: "Abel";
 }
+
 .Contact-button-desktop:hover {
     transform: scale(1.05);
 }
@@ -257,6 +265,7 @@
     font-family: "Abel";
     align-self: center;
 }
+
 .Projects-button-desktop:hover {
     transform: scale(1.05);
 }
@@ -270,43 +279,55 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .skillGo {
     width: 80px;
 }
+
 .skillNode {
     width: 115px;
     margin-top: -8px;
 }
+
 .skillJS {
     width: 45px;
 }
+
 .skillReact {
     width: 55px;
 }
+
 .skillAndroid {
     width: 55px;
 }
+
 .skillIOS {
     width: 50px;
     margin-top: -8px;
 }
+
 .skillPy {
     width: 55px;
 }
+
 .skillCpp {
     width: 50px;
     margin-top: -5px;
 }
+
 .skillCsh {
     width: 50px;
     margin-top: -5px;
 }
+
 .skillPsql {
     width: 55px;
 }
+
 .skillDocker {
     width: 55px;
 }
+
 .skillAWS {
     width: 100px;
 }
