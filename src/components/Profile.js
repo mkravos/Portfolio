@@ -14,7 +14,7 @@ export default function Profile() {
 
     // page content
     const name = "Maj Kravos"
-    const location = "Arlington Heights, IL, United States"
+    const location = "Chicago, IL, United States"
     const social = useState(
         <>
             <a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a>
