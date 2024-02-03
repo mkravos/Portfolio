@@ -17,7 +17,7 @@ export default function Profile() {
     const location = "Chicago, IL, United States"
     const social = useState(
         <>
-            <a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/majkravos" target="_blank" rel="noopener noreferrer">LinkedIn</a> | <a href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="mailto:contact@majkravos.com">Contact</a>
         </>
     )
     const aboutMe = "Passionate and results-driven Software Engineer with a solid two-year foundation in full stack development. Demonstrates exceptional leadership skills, guiding projects seamlessly from ideation to deployment. Proficient in front-end, back-end, mobile, and database development, complemented by a strong emphasis on effective communication and collaboration."
