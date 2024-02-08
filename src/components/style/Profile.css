@@ -287,8 +287,7 @@
 }
 
 .skillNode {
-    width: 115px;
-    margin-top: -8px;
+    width: 80px;
 }
 
 .skillJS {
@@ -331,5 +330,5 @@
 }
 
 .skillAWS {
-    width: 100px;
+    width: 65px;
 }
