@@ -1,10 +1,19 @@
 import "./style/Welcome.css";
 import background from "../assets/SplashBackground.jpg";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { isMobile } from "react-device-detect";
 
 export default function Welcome() {
     const [welcomeVisible, setWelcomeVisible] = useState(true)
+    useEffect(() => {
+        if (!welcomeVisible) {
+            window.scrollTo({
+                top: 0,
+                behavior: "instant"
+            });
+        }
+    }, [welcomeVisible]);
+
     const handleScroll = async () => {
         window.scrollTo({
             top: window.innerHeight,
@@ -13,10 +22,6 @@ export default function Welcome() {
         window.addEventListener('scroll', () => {
             if (window.scrollY === window.innerHeight) {
                 setWelcomeVisible(false);
-                window.scrollTo({
-                    top: 0,
-                    behavior: "instant"
-                });
                 window.removeEventListener('scroll');
             }
         });
