@@ -7,7 +7,6 @@
   font-size: calc(10px + 2vmin);
   color: rgb(255, 255, 255);
   font-family: "Abel";
-  background-color: rgba(0, 123, 255, 0.621);
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -36,18 +35,6 @@ a {
   opacity: 0.2;
   height: 100vh;
   width: 100vw;
-}
-
-.Location-bar {
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 65px;
-  background-color: rgba(0, 123, 255, 0.621);
-  box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.18);
-  z-index: 1;
 }
 
 .location {

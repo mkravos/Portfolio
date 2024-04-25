@@ -1,10 +1,14 @@
 import './App.css';
 import Welcome from './components/Welcome';
+import Profile from './components/Profile';
+import FeaturedProjects from './components/FeaturedProjects';
 
-function App() {
+export default function App() {
   return (
-    <Welcome />
+    <div>
+      <Welcome />
+      <Profile />
+      <FeaturedProjects />
+    </div>
   );
 }
-
-export default App;
