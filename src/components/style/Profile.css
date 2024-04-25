@@ -3,19 +3,17 @@
 .Home-content-desktop {
     display: flex;
     flex-direction: column;
-    position: absolute;
     font-weight: 800;
     width: 85vw;
-    margin-top: 90px;
+    margin-top: 25px;
 }
 
 .Home-content-mobile {
     display: flex;
     flex-direction: column;
-    position: absolute;
     font-weight: 800;
     width: 85vw;
-    margin-top: 90px;
+    margin-top: 25px;
 }
 
 .Profile-header-mobile {
@@ -331,4 +329,8 @@
 
 .skillAWS {
     width: 65px;
+}
+
+.mobileProfileSmallHeaderText {
+    margin-top: 1%;
 }

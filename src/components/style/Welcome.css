@@ -2,6 +2,7 @@
 
 .Welcome-page {
     justify-content: center;
+    background-color: rgba(0, 123, 255, 0.621);
     font-size: 25px;
 }
 
@@ -26,30 +27,37 @@
     align-self: flex-start;
     margin-left: 10vh;
 }
+
 .Social-icons-mobile {
     margin-top: 100px;
 }
+
 .bi-linkedin-desktop {
     margin-bottom: 15px;
     width: 30px;
     height: 30px;
 }
+
 .bi-linkedin-desktop:hover {
     transform: scale(1.1);
 }
+
 .bi-github-desktop {
     margin-top: 15px;
     width: 30px;
     height: 30px;
 }
+
 .bi-github-desktop:hover {
     transform: scale(1.1);
 }
+
 .bi-linkedin-mobile {
     margin-right: 10px;
     width: 30px;
     height: 30px;
 }
+
 .bi-github-mobile {
     margin-left: 10px;
     width: 30px;
@@ -71,6 +79,7 @@
     font-weight: 800;
     font-family: "Abel";
 }
+
 .Proceed-button:hover {
     transform: scale(1.05);
 }
