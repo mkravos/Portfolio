@@ -3,10 +3,6 @@ import background from "../assets/SplashBackground.jpg";
 import React, { useState } from "react";
 import { isMobile } from "react-device-detect";
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 export default function Welcome() {
     const [welcomeVisible, setWelcomeVisible] = useState(true)
     const handleScroll = async () => {
@@ -14,11 +10,15 @@ export default function Welcome() {
             top: window.innerHeight,
             behavior: "smooth"
         });
-        await sleep(500)
-        setWelcomeVisible(false)
-        window.scrollTo({
-            top: 0,
-            behavior: "instant"
+        window.addEventListener('scroll', () => {
+            if (window.scrollY === window.innerHeight) {
+                setWelcomeVisible(false);
+                window.scrollTo({
+                    top: 0,
+                    behavior: "instant"
+                });
+                window.removeEventListener('scroll');
+            }
         });
     };
 
