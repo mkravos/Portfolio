@@ -6,6 +6,13 @@ import Introduction from './components/Introduction';
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+  const scrollToComponent = (target) => {
+    const element = document.getElementById(target);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   // listens for dark mode or light mode and updates as necessary based on system theme
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -24,9 +31,9 @@ export default function App() {
 
   return (
     <div className='App'>
-      <Nav darkMode={darkMode} />
+      <div id="navbar"><Nav darkMode={darkMode} scrollToComponent={(e, target) => scrollToComponent(e, target)} /></div>
       <div className='App-content'>
-        <Introduction darkMode={darkMode} />
+        <div id='introduction'><Introduction darkMode={darkMode} /></div>
       </div>
     </div>
   );

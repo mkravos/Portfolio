@@ -1,15 +1,33 @@
-import React, { useRef, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png';
 
-export default function Nav({ darkMode }) {
+export default function Nav({ darkMode, scrollToComponent }) {
     const [mobileNavVisible, setMobileNavVisible] = useState(false);
-    const myRef = useRef(null);
+    const [isArrowVisible, setIsArrowVisible] = useState(false);
 
-    const scrollToComponent = (e) => {
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY === 0) {
+                setIsArrowVisible(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollTo = (e, target) => {
         e.preventDefault();
-        if (myRef.current) {
-            myRef.current.scrollIntoView({ behavior: "smooth" });
+
+        if (mobileNavVisible) {
+            showMobileNav(false);
         }
+
+        scrollToComponent(target);
+        setIsArrowVisible(true);
     };
 
     const showMobileNav = () => {
@@ -37,11 +55,11 @@ export default function Nav({ darkMode }) {
                 </div>
                 <div className="navbar-menu" id="navMenu">
                     <div className="navbar-end">
-                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={scrollToComponent}>About Me</a>
-                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={scrollToComponent}>Work</a>
-                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={scrollToComponent}>Projects</a>
-                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={scrollToComponent}>Contributions</a>
-                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={scrollToComponent}>Socials</a>
+                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'about-me')}>About Me</a>
+                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'work')}>Work</a>
+                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'projects')}>Projects</a>
+                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'contributions')}>Contributions</a>
+                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'socials')}>Socials</a>
 
                         <div className='navbar-item'>
                             <a style={{ marginLeft: `${mobileNavVisible ? 0 : 10}`, marginTop: `${mobileNavVisible ? 10 : 0}` }} className={`button is-rounded has-text-weight-normal ${darkMode ? 'is-info' : 'is-link'}`} href="mailto:contact@majkravos.com?subject=Hello, Maj!">Say Hello</a>
@@ -49,6 +67,21 @@ export default function Nav({ darkMode }) {
                     </div>
                 </div>
             </div>
+            <UpArrow isArrowVisible={isArrowVisible} setIsArrowVisible={(yesno) => setIsArrowVisible(yesno)} />
         </nav>
     );
+}
+
+function UpArrow({ isArrowVisible, setIsArrowVisible }) {
+    const handleScrollUp = (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setIsArrowVisible(false)
+    };
+
+    if (isArrowVisible) {
+        return (
+            <div i className='Up-arrow-btn has-text-link'><button onClick={handleScrollUp}>^</button></div>
+        );
+    }
 }
