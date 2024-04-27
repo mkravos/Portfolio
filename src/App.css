@@ -38,9 +38,20 @@
 
   .navbar-menu {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.9);
     left: auto;
     right: 0;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .navbar-menu {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .navbar-menu {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
   }
 }
 
@@ -57,7 +68,13 @@
 }
 
 .About-me {
-  background-color: navy;
+  @media (prefers-color-scheme: dark) {
+    background-color: navy;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: #3273dc;
+  }
 }
 
 .has-text-white-muted {

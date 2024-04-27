@@ -67,12 +67,12 @@ export default function Nav({ darkMode, scrollToComponent }) {
                     </div>
                 </div>
             </div>
-            <UpArrow isArrowVisible={isArrowVisible} setIsArrowVisible={(yesno) => setIsArrowVisible(yesno)} />
+            <UpArrow darkMode={darkMode} isArrowVisible={isArrowVisible} setIsArrowVisible={(yesno) => setIsArrowVisible(yesno)} />
         </nav>
     );
 }
 
-function UpArrow({ isArrowVisible, setIsArrowVisible }) {
+function UpArrow({ darkMode, isArrowVisible, setIsArrowVisible }) {
     const handleScrollUp = (e) => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -81,7 +81,7 @@ function UpArrow({ isArrowVisible, setIsArrowVisible }) {
 
     if (isArrowVisible) {
         return (
-            <div i className='Up-arrow-btn has-text-link'><button onClick={handleScrollUp}>^</button></div>
+            <div i className={`Up-arrow-btn ${darkMode ? 'has-text-info' : 'has-text-link'}`}><button onClick={handleScrollUp}>^</button></div>
         );
     }
 }
