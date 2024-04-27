@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav'
 import Introduction from './components/Introduction';
+import AboutMe from './components/AboutMe';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,6 +35,7 @@ export default function App() {
       <div id="navbar"><Nav darkMode={darkMode} scrollToComponent={(e, target) => scrollToComponent(e, target)} /></div>
       <div className='App-content'>
         <div id='introduction'><Introduction darkMode={darkMode} /></div>
+        <div id='about-me'><AboutMe darkMode={darkMode} /></div>
       </div>
     </div>
   );
