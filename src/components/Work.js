@@ -90,7 +90,7 @@ export default function Work({ darkMode }) {
                     <div className="client-grid">
                         <div className="columns is-centered is-multiline is-mobile">
                             <div className="column is-half-mobile is-one-quarter-tablet">
-                                <figure className="image is-2x1"><img className="client-logo" src={darkMode ? niu : niuDark} alt="Logo of Northern Illinois University"></img></figure>
+                                <figure className="image is-2x1"><img className="client-logo" style={{ height: 95 }} src={darkMode ? niu : niuDark} alt="Logo of Northern Illinois University"></img></figure>
                             </div>
                             <div className="column is-half-mobile is-one-quarter-tablet">
                                 <figure className="image is-2x1"><img className="client-logo" style={{ height: 95 }} src={darkMode ? kish : kishDark} alt="Logo of Kishwaukee College"></img></figure>
