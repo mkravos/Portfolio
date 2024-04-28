@@ -88,7 +88,10 @@
 
 .My-stack {
   margin-top: 100px;
-  margin-bottom: -100px;
+
+  @media only screen and (min-width: 1023.9px) {
+    margin-bottom: -100px;
+  }
 }
 
 .My-stack::before,
@@ -126,14 +129,16 @@
 }
 
 .Middle-column {
-  @media (prefers-color-scheme: dark) {
-    border-right: 0.1px solid rgba(255, 255, 255, 0.25);
-    border-left: 0.1px solid rgba(255, 255, 255, 0.25);
-  }
+  @media only screen and (min-width: 770px) {
+    @media (prefers-color-scheme: dark) {
+      border-right: 0.1px solid rgba(255, 255, 255, 0.25);
+      border-left: 0.1px solid rgba(255, 255, 255, 0.25);
+    }
 
-  @media (prefers-color-scheme: light) {
-    border-right: 0.1px solid rgba(0, 0, 0, 0.25);
-    border-left: 0.1px solid rgba(0, 0, 0, 0.25);
+    @media (prefers-color-scheme: light) {
+      border-right: 0.1px solid rgba(0, 0, 0, 0.25);
+      border-left: 0.1px solid rgba(0, 0, 0, 0.25);
+    }
   }
 
   height: 850px;
@@ -144,15 +149,15 @@
 }
 
 .Skills-intro-paragraph {
-  height: 75px;
+  min-height: 75px;
 }
 
 .Skills-paragraph {
-  height: 50px;
+  min-height: 50px;
 }
 
 .Skills-list {
-  height: 100px;
+  min-height: 100px;
 }
 
 .Skills-list>li {
