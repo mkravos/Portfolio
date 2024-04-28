@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from './components/Nav'
 import Introduction from './components/Introduction';
 import AboutMe from './components/AboutMe';
+import Work from './components/Work';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,6 +37,7 @@ export default function App() {
       <div className='App-content'>
         <div id='introduction'><Introduction darkMode={darkMode} /></div>
         <div id='about-me'><AboutMe darkMode={darkMode} /></div>
+        <div id='work'><Work darkMode={darkMode} /></div>
       </div>
     </div>
   );

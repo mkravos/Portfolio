@@ -1,0 +1,56 @@
+.project-thumb {
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    /* Add transform transition */
+    position: relative;
+}
+
+figcaption {
+    opacity: 0;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    padding: 50px;
+}
+
+figcaption a {
+    display: inline-block;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+figure {
+    border-radius: 15px;
+    overflow: hidden;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: navy;
+    }
+
+    @media (prefers-color-scheme: light) {
+        background-color: #3273dc;
+    }
+}
+
+figure:hover .project-thumb {
+    opacity: 0.7;
+    transform: scale(1.1);
+    /* Zoom in the image slightly */
+}
+
+figure:hover .project-thumb {
+    opacity: 0;
+    /* Make the image invisible on hover */
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+figure:hover figcaption a {
+    display: inline-block;
+}

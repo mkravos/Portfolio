@@ -173,3 +173,25 @@
   border-radius: 35%;
   padding: 15px;
 }
+
+.project-grid>.columns>.column {
+  min-width: 400px;
+}
+
+.project-grid {
+  display: flex;
+
+  @media only screen and (min-width: 1200px) {
+    justify-content: space-around;
+    padding-bottom: 65px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Work-subtitle {
+  padding-bottom: 65px;
+}
