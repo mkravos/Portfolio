@@ -5,6 +5,8 @@ import latitude from '../assets/projects/latitude.png';
 import asarconnect from '../assets/projects/asarconnect.png';
 import percipia from '../assets/clients/percipia-logo.png';
 import asar from '../assets/clients/asar-logo.png';
+import kish from '../assets/clients/kishwaukee-college-logo.png';
+import kishDark from '../assets/clients/kishwaukee-college-logo-dark.png';
 import niu from '../assets/clients/niu-logo.png';
 import niuDark from '../assets/clients/niu-logo-dark.png';
 
@@ -64,7 +66,7 @@ export default function Work({ darkMode }) {
                 <div className="container is-narrow">
                     <div className="columns is-centered">
                         <div className="Clients-title-column column is-half">
-                            <h1 className="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">I'm proud to have worked for some companies that are impactful in their fields:</h1>
+                            <h1 className="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">I'm grateful to have had the opportunity to work at some impactful companies:</h1>
                         </div>
                     </div>
                     <div className="client-grid">
@@ -77,6 +79,21 @@ export default function Work({ darkMode }) {
                             </div>
                             <div className="column is-half-mobile is-one-quarter-tablet">
                                 <figure className="image is-2x1"><img className="client-logo" src={darkMode ? niu : niuDark} alt="Logo of Northern Illinois University"></img></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="columns is-centered">
+                        <div className="Clients-title-column column is-half">
+                            <h1 style={{ marginTop: 50 }} className="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">I'm also a proud Computer Science graduate of:</h1>
+                        </div>
+                    </div>
+                    <div className="client-grid">
+                        <div className="columns is-centered is-multiline is-mobile">
+                            <div className="column is-half-mobile is-one-quarter-tablet">
+                                <figure className="image is-2x1"><img className="client-logo" src={darkMode ? niu : niuDark} alt="Logo of Northern Illinois University"></img></figure>
+                            </div>
+                            <div className="column is-half-mobile is-one-quarter-tablet">
+                                <figure className="image is-2x1"><img className="client-logo" style={{ height: 95 }} src={darkMode ? kish : kishDark} alt="Logo of Kishwaukee College"></img></figure>
                             </div>
                         </div>
                     </div>
