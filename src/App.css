@@ -45,3 +45,26 @@
 .Work-subtitle {
   padding-bottom: 65px;
 }
+
+.clients>.container>.client-grid>.columns>* {
+  padding: 50px;
+}
+
+.clients {
+  @media only screen and (min-width: 1025px) {
+    margin-top: -150px;
+  }
+}
+
+.work::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: gray;
+  opacity: 0.5;
+  margin-top: 100px;
+}
+
+.Clients-title-column {
+  margin-bottom: 50px;
+}
