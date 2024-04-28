@@ -1,3 +1,4 @@
+import './style/Skills.css'
 import React from 'react';
 import frontend from '../assets/style/frontend.png';
 import backend from '../assets/style/backend.png';
@@ -31,15 +32,16 @@ export default function AboutMe({ darkMode }) {
                             <div className="columns is-centered">
                                 <div className="column">
                                     <img src={backend} alt="Backend Development" className="Skill-image" />
-                                    <h1 className="title is-size-4 is-spaced">Backend</h1>
-                                    <p className="Skills-intro-paragraph">I value lightweight, maintainable, and efficient solutions to complex problems.</p>
+                                    <h1 className="title is-size-4 is-spaced">Backend &amp; DB</h1>
+                                    <p className="Skills-intro-paragraph">I value lightweight, maintainable, and scalable solutions to complex problems.</p>
                                     <p className="list-title has-text-link has-text-weight-normal">Things I enjoy engineering:</p>
-                                    <p className="Skills-paragraph">REST APIs, Integrations, IoT Applications, Web Services, and Web-App Backends</p>
+                                    <p className="Skills-paragraph">REST APIs, Integrations, IoT Software, Web Services, and Web-App Backends</p>
                                     <p className="list-title has-text-link has-text-weight-normal">Languages &amp; Frameworks:</p>
                                     <ul className="Skills-list">
                                         <li>Go</li>
                                         <li>Node.js</li>
                                         <li>Express.js</li>
+                                        <li>CORS</li>
                                     </ul>
                                     <p className="list-title has-text-link has-text-weight-normal">Database Management Systems:</p>
                                     <ul className="Skills-list">

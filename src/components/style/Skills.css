@@ -1,0 +1,107 @@
+.My-stack {
+    margin-top: 100px;
+
+    @media only screen and (min-width: 1023.9px) {
+        margin-bottom: -100px;
+    }
+}
+
+.My-stack::before,
+.My-stack::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: white;
+    opacity: 0.5;
+    margin: 10px 0;
+}
+
+.Skills-container {
+    margin-top: -200px;
+
+    @media (prefers-color-scheme: dark) {
+        border: 0.1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+    }
+
+    @media (prefers-color-scheme: light) {
+        border: 0.1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+}
+
+.Skills-container>.box>.content>.columns>.column {
+    @media (prefers-color-scheme: dark) {
+        border-bottom: 0.1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    @media (prefers-color-scheme: light) {
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.25);
+    }
+}
+
+.Middle-column {
+    @media only screen and (min-width: 770px) {
+        @media (prefers-color-scheme: dark) {
+            border-right: 0.1px solid rgba(255, 255, 255, 0.25);
+            border-left: 0.1px solid rgba(255, 255, 255, 0.25);
+        }
+
+        @media (prefers-color-scheme: light) {
+            border-right: 0.1px solid rgba(0, 0, 0, 0.25);
+            border-left: 0.1px solid rgba(0, 0, 0, 0.25);
+        }
+    }
+
+    min-height: 850px;
+}
+
+.Bottom-column {
+    padding-top: 50px;
+}
+
+.Skills-intro-paragraph {
+    min-height: 75px;
+}
+
+.Skills-paragraph {
+    min-height: 50px;
+}
+
+.Skills-list {
+    @media only screen and (min-width: 1023.9px) {
+        min-height: 140px;
+    }
+}
+
+.Skills-list>li {
+    list-style-type: none;
+    padding-right: 12%;
+}
+
+.Skill-image {
+    margin-top: 50px;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(0, 128, 128, 0.5);
+    border-radius: 35%;
+    padding: 15px;
+}
+
+.project-grid>.columns>.column {
+    min-width: 400px;
+}
+
+.project-grid {
+    display: flex;
+
+    @media only screen and (min-width: 1200px) {
+        justify-content: space-around;
+        padding-bottom: 65px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
