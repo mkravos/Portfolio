@@ -141,7 +141,7 @@
     }
   }
 
-  height: 850px;
+  min-height: 850px;
 }
 
 .Bottom-column {
