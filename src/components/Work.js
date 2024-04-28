@@ -14,7 +14,7 @@ export default function Work({ darkMode }) {
             <section className="section work is-medium is-transparent has-text-centered">
                 <div className="container is-narrow">
                     <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">My Recent Work</h1>
-                    <h2 className="Work-subtitle subtitle is-size-5-desktop">Here are a few products I've worked on. Want other examples? <a href="mailto:contact@majkravos.com?subject=Hello, I'd like to see more of your work!">Email me.</a></h2>
+                    <h2 className="Work-subtitle subtitle is-size-5-desktop">Here are a few products I've worked on. Want other examples? <a href="mailto:contact@majkravos.com?subject=Maj, I'd like to see more of your work!">Email me.</a></h2>
                     <div className="project-grid">
                         <div className="columns is-multiline is-mobile">
                             <div className="column is-12-mobile is-half-tablet is-one-third-desktop">
