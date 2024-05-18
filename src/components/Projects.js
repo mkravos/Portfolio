@@ -10,10 +10,7 @@ export default function Projects({ darkMode }) {
                         <div className="column is-three-fifths">
                             <h1 className="title has-text-white is-spaced is-size-3-desktop is-size-4-mobile">My Personal Projects</h1>
                             <h2 className="subtitle has-text-white-muted is-size-5-desktop has-text-weight-normal">
-                                a dedicated Software Engineer with a solid two-year foundation in full-stack and mobile app development.
-                                I specialize in crafting quality software solutions for businesses and consumers alike. Passionate about
-                                innovation and committed to excellence, I thrive in dynamic environments where I can leverage my skills
-                                to create impactful digital experiences.
+                                Beyond my professional work, I enjoy applying my coding skills to personal projects that align with my interests and hobbies. Here is a showcase of some applications I've built over the years.
                             </h2>
                         </div>
                     </div>
