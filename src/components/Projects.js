@@ -1,5 +1,6 @@
 import './style/Projects.css'
 import React from 'react';
+import link from '../assets/style/link.png';
 
 export default function Projects({ darkMode }) {
     return (
@@ -26,7 +27,7 @@ export default function Projects({ darkMode }) {
                                     <p>Maintenance tracking and upcoming service notifications for all of a user's vehicles.</p>
                                     <a class="link" href="https://github.com/mkravos/Vehicle-Maintenance-Tracker" target="_blank noopener noreferrer">
                                         <span class="tag is-link is-light is-medium">
-                                            &#x1F517; &nbsp; github.com
+                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
@@ -37,7 +38,7 @@ export default function Projects({ darkMode }) {
                                     <p>An easy-to-use, Dockerized todo list app I wrote while learning Golang.</p>
                                     <a class="link" href="https://github.com/mkravos/go-todo" target="_blank noopener noreferrer">
                                         <span class="tag is-link is-light is-medium">
-                                            &#x1F517; &nbsp; github.com
+                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
@@ -48,7 +49,7 @@ export default function Projects({ darkMode }) {
                                     <p>A thought experiment in the form of a game, running in a Java+JSwing native app.</p>
                                     <a class="link" href="https://github.com/mkravos/prisoners-dilemma" target="_blank noopener noreferrer">
                                         <span class="tag is-link is-light is-medium">
-                                            &#x1F517; &nbsp; github.com
+                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
