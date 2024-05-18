@@ -4,6 +4,7 @@ import Nav from './components/Nav'
 import Introduction from './components/Introduction';
 import AboutMe from './components/AboutMe';
 import Work from './components/Work';
+import Projects from './components/Projects';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -38,6 +39,7 @@ export default function App() {
         <div id='introduction'><Introduction darkMode={darkMode} /></div>
         <div id='about-me'><AboutMe darkMode={darkMode} /></div>
         <div id='work'><Work darkMode={darkMode} /></div>
+        <div id='projects'><Projects darkMode={darkMode} /></div>
       </div>
     </div>
   );

@@ -1,0 +1,29 @@
+.Projects-container>.startup-grid>.columns>.column>.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+
+    @media (prefers-color-scheme: dark) {
+        border: 0.1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+    }
+
+    @media (prefers-color-scheme: light) {
+        border: 0.1px solid rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+}
+
+.Projects-container>.startup-grid>.columns>.column>.box>a {
+    width: fit-content;
+}
+
+.Projects-container>.startup-grid>.columns {
+    margin-bottom: 15vh;
+}
+
+.Projects-container {
+    margin-top: -25vh;
+}

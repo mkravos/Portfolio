@@ -37,6 +37,20 @@
   padding-bottom: 150px;
 }
 
+.Projects {
+  @media (prefers-color-scheme: dark) {
+    background-color: navy;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: #3273dc;
+  }
+}
+
+.Projects>.container {
+  padding-bottom: 150px;
+}
+
 .has-text-white-muted {
   color: white;
   opacity: .70;
