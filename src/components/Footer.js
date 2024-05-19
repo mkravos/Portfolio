@@ -3,7 +3,16 @@ import React from 'react';
 import logo from '../assets/logo.png';
 
 export default function Footer({ darkMode }) {
-    const currentYear = new Date().getFullYear();
+    const currentYearCalc = new Date().getFullYear();
+    var currentYear;
+
+    // 2024 is when the website was first published, so if the year is greater than 2024, we use a range from 2024-<the current year>
+    // side note: overkill but fun
+    if (currentYearCalc > 2024) {
+        currentYear = "2024-" + currentYearCalc;
+    } else {
+        currentYear = currentYearCalc;
+    }
 
     return (
         <div>
