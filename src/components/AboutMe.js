@@ -11,9 +11,9 @@ export default function AboutMe({ darkMode }) {
                 <div className="container">
                     <div className="columns is-centered">
                         <div className="column is-three-fifths">
-                            <h1 className="title has-text-white is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Maj Kravos,</h1>
+                            <h1 className="title has-text-white is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Maj Kravos.</h1>
                             <h2 className="subtitle has-text-white-muted is-size-5-desktop has-text-weight-normal">
-                                a dedicated Software Engineer with a solid two-year foundation in full-stack and mobile app development.
+                                A dedicated Software Engineer with a solid two-year foundation in full-stack and mobile app development.
                                 I specialize in crafting quality software solutions for businesses and consumers alike. Passionate about
                                 innovation and committed to excellence, I thrive in dynamic environments where I can leverage my skills
                                 to create impactful digital experiences.

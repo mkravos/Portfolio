@@ -64,7 +64,7 @@ export default function Work({ darkMode }) {
                 <div className="container is-narrow">
                     <div className="columns is-centered">
                         <div className="Clients-title-column column is-half">
-                            <h1 className="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">I'm grateful to have had the opportunity to work at some impactful companies:</h1>
+                            <h1 className="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">I'm proud to have worked for some impactful companies:</h1>
                         </div>
                     </div>
                     <div className="client-grid">
