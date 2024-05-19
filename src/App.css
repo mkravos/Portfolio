@@ -1,93 +1,116 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
-.App-body {
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-family: "Abel";
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(0, 112, 231);
-}
-
-.background-mobile {
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  opacity: 0.2;
-  height: 100vh;
-}
-
-.background-desktop {
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  opacity: 0.2;
-  height: 100vh;
-  width: 100vw;
-}
-
-.location {
-  font-size: 35px;
-  z-index: 1;
-}
-
-.Location-bar .Location-bar-background {
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  opacity: 0.2;
-  position: inherit;
-  width: 100vw;
-  height: 65px;
-  object-fit: cover;
-}
-
-.Back-btn-desktop {
-  cursor: pointer;
+.App-content {
   position: absolute;
-  margin-top: 3px;
-  margin-right: 92vw;
-  background: none;
+  width: 100vw;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.hero {
+  padding: 0.75rem;
+}
+
+.About-me {
+  @media (prefers-color-scheme: dark) {
+    background-color: navy;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: #3273dc;
+  }
+}
+
+.About-me>.container {
+  padding-bottom: 150px;
+}
+
+.Footer {
+  @media (prefers-color-scheme: dark) {
+    background-color: navy;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: #3273dc;
+  }
+}
+
+.Footer>.container {
+  padding-bottom: 25px;
+}
+
+.social-icons>.field>a {
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.Footer-logo {
+  margin-bottom: 50px;
+}
+
+.Social-button {
+  border-radius: 50%;
+}
+
+.Social-button>.icon {
+  padding: 2.5px;
+}
+
+.Projects {
+  @media (prefers-color-scheme: dark) {
+    background-color: navy;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: #3273dc;
+  }
+}
+
+.Projects>.container {
+  padding-bottom: 150px;
+}
+
+.has-text-white-muted {
   color: white;
-  border: none;
-  height: fit-content;
-  width: fit-content;
+  opacity: .70;
 }
 
-.Back-btn-desktop:hover {
-  transform: scale(1.1);
+.Work-subtitle {
+  padding-bottom: 65px;
 }
 
-.Back-btn-mobile {
-  cursor: pointer;
-  position: absolute;
-  margin-top: 3px;
-  margin-right: 75vw;
-  background: none;
-  color: white;
-  border: none;
-  height: fit-content;
-  width: fit-content;
+.clients>.container>.client-grid>.columns>* {
+  padding: 50px;
 }
 
-.bi-arrow-left-short {
-  width: 50px;
-  height: 50px;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: -15px;
-  margin-bottom: -15px;
+.clients {
+  @media only screen and (min-width: 1025px) {
+    margin-top: -150px;
+  }
+}
+
+.work::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: gray;
+  opacity: 0.5;
+  margin-top: 100px;
+}
+
+.Clients-title-column {
+  margin-bottom: 50px;
 }
