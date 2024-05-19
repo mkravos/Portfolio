@@ -51,7 +51,7 @@
   padding-bottom: 25px;
 }
 
-.social-icons>.field>a {
+.footer-icons>.field>a {
   margin: 10px;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -61,11 +61,11 @@
   margin-bottom: 50px;
 }
 
-.Social-button {
+.Footer-button {
   border-radius: 50%;
 }
 
-.Social-button>.icon {
+.Footer-button>.icon {
   padding: 2.5px;
 }
 
