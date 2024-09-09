@@ -143,7 +143,7 @@ export default function AboutMe({ darkMode }) {
                 </h1>
                 <p className="Skills-intro-paragraph">
                   Docker, GitLab CI/CD, AWS EC2, AWS Lambda, AWS Lightsail,
-                  Heroku, Netlify, Git, Linux, VSCode
+                  Heroku, Netlify, Vultr, Git, Linux, VSCode
                 </p>
               </div>
             </div>
