@@ -142,8 +142,8 @@ export default function AboutMe({ darkMode }) {
                   What I use to bring it all together:
                 </h1>
                 <p className="Skills-intro-paragraph">
-                  Docker, GitLab CI/CD, AWS EC2, AWS Lightsail, Heroku, Netlify,
-                  Git, Linux, VSCode
+                  Docker, GitLab CI/CD, AWS EC2, AWS Lambda, AWS Lightsail,
+                  Heroku, Netlify, Git, Linux, VSCode
                 </p>
               </div>
             </div>
