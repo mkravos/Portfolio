@@ -40,8 +40,8 @@ export default function Work({ darkMode }) {
                   <p className="product-title viva">VIVA</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Guided the project from an early stage of development to
-                      completion.
+                      Guided Percipia's voice integration project from an early
+                      stage of development to completion.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
@@ -49,7 +49,7 @@ export default function Work({ darkMode }) {
                       target="_blank noopener noreferrer"
                     >
                       <span className="Figure-link-text">
-                        Visit Product Page&nbsp;&nbsp;&gt;
+                        Visit VIVA Product Page&nbsp;&nbsp;&gt;
                       </span>
                     </a>
                   </figcaption>
@@ -62,7 +62,6 @@ export default function Work({ darkMode }) {
                     className="project-thumb"
                     style={{
                       width: "70%",
-                      marginLeft: "5%",
                       marginTop: "2.5%",
                     }}
                     src={vivaplus}
@@ -71,8 +70,8 @@ export default function Work({ darkMode }) {
                   <p className="product-title vivaplus">VIVA+</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Collaborated with Amazon's A4H team to create a
-                      hospitality-focused multimodal skill for Alexa.
+                      Collaborated with Amazon's A4H team to create Percipia's
+                      hospitality-integrated multimodal skill for Alexa.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
@@ -80,7 +79,7 @@ export default function Work({ darkMode }) {
                       target="_blank noopener noreferrer"
                     >
                       <span className="Figure-link-text">
-                        Visit Product Page&nbsp;&nbsp;&gt;
+                        Visit VIVA+ Product Page&nbsp;&nbsp;&gt;
                       </span>
                     </a>
                   </figcaption>
@@ -94,7 +93,6 @@ export default function Work({ darkMode }) {
                     style={{
                       width: "70%",
                       height: "70%",
-                      marginLeft: "10%",
                       marginTop: "15%",
                     }}
                     src={latitude}
@@ -103,8 +101,9 @@ export default function Work({ darkMode }) {
                   <p className="product-title latitude">LATITUDE</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Developed customized versions of the application for end
-                      customers, with new API integrations to boot.
+                      Developed customized versions of the application for
+                      Percipia's end customers, with new API integrations to
+                      boot.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
@@ -112,7 +111,7 @@ export default function Work({ darkMode }) {
                       target="_blank noopener noreferrer"
                     >
                       <span className="Figure-link-text">
-                        Visit Product Page&nbsp;&nbsp;&gt;
+                        Visit LATITUDE Product Page&nbsp;&nbsp;&gt;
                       </span>
                     </a>
                   </figcaption>
@@ -138,7 +137,7 @@ export default function Work({ darkMode }) {
                       target="_blank noopener noreferrer"
                     >
                       <span className="Figure-link-text">
-                        Visit Company&nbsp;&nbsp;&gt;
+                        Visit ASAR Digital's Website&nbsp;&nbsp;&gt;
                       </span>
                     </a>
                   </figcaption>
