@@ -102,8 +102,7 @@ export default function Work({ darkMode }) {
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
                       Developed customized versions of the application for
-                      Percipia's end customers, with new API integrations to
-                      boot.
+                      Percipia's customers, with new API integrations to boot.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
