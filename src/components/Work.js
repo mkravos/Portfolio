@@ -124,7 +124,7 @@ export default function Work({ darkMode }) {
                     <span className="connect">Connect</span>
                   </p>
                   <figcaption>
-                    <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
+                    <h1 className="title has-text-white is-size-6 is-size-4-widescreen">
                       Created an AWS-hosted internal web app called ASARConnect,
                       providing ASAR Digital the capability to onboard, keep
                       track of, and manage their freelancers and offshore
