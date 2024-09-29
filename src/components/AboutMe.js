@@ -48,28 +48,24 @@ export default function AboutMe({ darkMode }) {
                     complex problems.
                   </p>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Things I enjoy building:
+                    Languages:
                   </p>
-                  <p className="Skills-paragraph">
-                    REST APIs, Integrations, IoT Software, Web Services, and
-                    Serverless Functions
-                  </p>
+                  <p className="Skills-paragraph">Go, JavaScript, Python</p>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Languages &amp; Frameworks:
+                    Tools &amp; Frameworks:
                   </p>
                   <ul className="Skills-list">
-                    <li>Go</li>
                     <li>Node.js</li>
                     <li>Express.js</li>
-                    <li>Python</li>
+                    <li>Flask</li>
                   </ul>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Database Management Systems:
                   </p>
                   <ul className="Skills-list">
                     <li>PostgreSQL</li>
-                    <li>MariaDB</li>
-                    <li>BoltDB</li>
+                    <li>MariaDB / MySQL</li>
+                    <li>SQLite</li>
                   </ul>
                 </div>
                 <div className="column Middle-column">
@@ -92,7 +88,6 @@ export default function AboutMe({ darkMode }) {
                   </p>
                   <ul className="Skills-list">
                     <li>React.js</li>
-                    <li>SCSS</li>
                     <li>Bulma</li>
                     <li>Bootstrap</li>
                   </ul>
@@ -119,21 +114,19 @@ export default function AboutMe({ darkMode }) {
                   <p className="list-title has-text-link has-text-weight-normal">
                     Languages:
                   </p>
-                  <p className="Skills-paragraph">Java, XML</p>
+                  <p className="Skills-paragraph">Java, JavaScript</p>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Tools:
                   </p>
                   <ul className="Skills-list">
                     <li>Android Studio</li>
-                    <li>XCode</li>
                     <li>Gradle</li>
                   </ul>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    I am learning:
+                    Libraries:
                   </p>
                   <ul className="Skills-list">
                     <li>React Native</li>
-                    <li>Swift</li>
                   </ul>
                 </div>
               </div>
@@ -142,8 +135,7 @@ export default function AboutMe({ darkMode }) {
                   What I use to bring it all together:
                 </h1>
                 <p className="Skills-intro-paragraph">
-                  Docker, GitLab CI/CD, AWS EC2, AWS Lambda, AWS Lightsail,
-                  Heroku, Netlify, Vultr, Git, Linux, VSCode
+                  Docker, GitLab CI/CD, AWS, Heroku, Netlify, Vultr, Git, Linux
                 </p>
               </div>
             </div>

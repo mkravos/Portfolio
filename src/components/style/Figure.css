@@ -1,11 +1,13 @@
 .project-thumb {
     opacity: 1;
-    transition: opacity 0.3s, transform 0.3s;
+    transition:
+        opacity 0.3s,
+        transform 0.3s;
     /* Add transform transition */
     position: relative;
 }
 
-.Project-figure>figcaption {
+.Project-figure > figcaption {
     opacity: 0;
     transition: opacity 0.3s;
     position: absolute;
@@ -17,7 +19,7 @@
     padding: 50px;
 }
 
-.Project-figure>figcaption a {
+.Project-figure > figcaption a {
     display: inline-block;
     max-height: 40px;
     overflow: hidden;
@@ -47,10 +49,52 @@
     /* Make the image invisible on hover */
 }
 
+.Project-figure:hover .product-title {
+    opacity: 0;
+    /* Make the title invisible on hover */
+}
+
 .Project-figure:hover figcaption {
     opacity: 1;
 }
 
 .Project-figure:hover figcaption a {
     display: inline-block;
+}
+
+.product-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.viva {
+    margin-top: 15%;
+    margin-left: 50%;
+}
+
+.vivaplus {
+    margin-top: 15%;
+    margin-left: 65%;
+}
+
+.latitude {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.asarconnect {
+    margin-left: 25%;
+    margin-top: 22.5%;
+    padding: 5%;
+    font-size: 2.5em;
+    width: fit-content;
+    background-color: white;
+}
+
+.asar {
+    color: #fcc413;
+}
+
+.connect {
+    color: #046bd2;
 }
