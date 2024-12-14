@@ -1,8 +1,11 @@
 import "./style/Skills.css";
 import React from "react";
-import frontend from "../assets/style/frontend.png";
-import backend from "../assets/style/backend.png";
-import mobile from "../assets/style/mobile.png";
+import frontendPng from "../assets/style/frontend.png";
+import backendPng from "../assets/style/backend.png";
+import mobilePng from "../assets/style/mobile.png";
+import frontendWebp from "../assets/style/frontend.webp";
+import backendWebp from "../assets/style/backend.webp";
+import mobileWebp from "../assets/style/mobile.webp";
 
 export default function AboutMe({ darkMode }) {
   return (
@@ -35,11 +38,14 @@ export default function AboutMe({ darkMode }) {
             <div className="content">
               <div className="columns is-centered">
                 <div className="column">
-                  <img
-                    src={backend}
-                    alt="Backend Development"
-                    className="Skill-image"
-                  />
+                  <picture>
+                    <source srcSet={backendWebp} type="image/webp" />
+                    <img
+                      src={backendPng}
+                      alt="Backend Development"
+                      className="Skill-image"
+                    />
+                  </picture>
                   <h1 className="title is-size-4 is-spaced">
                     Backend &amp; DB
                   </h1>
@@ -69,11 +75,14 @@ export default function AboutMe({ darkMode }) {
                   </ul>
                 </div>
                 <div className="column Middle-column">
-                  <img
-                    src={frontend}
-                    alt="Frontend Development"
-                    className="Skill-image"
-                  />
+                  <picture>
+                    <source srcSet={frontendWebp} type="image/webp" />
+                    <img
+                      src={frontendPng}
+                      alt="Frontend Development"
+                      className="Skill-image"
+                    />
+                  </picture>
                   <h1 className="title is-size-4 is-spaced">Frontend</h1>
                   <p className="Skills-intro-paragraph">
                     I leverage my skills to create simple user interfaces that
@@ -101,11 +110,14 @@ export default function AboutMe({ darkMode }) {
                   </ul>
                 </div>
                 <div className="column">
-                  <img
-                    src={mobile}
-                    alt="Mobile Development"
-                    className="Skill-image"
-                  />
+                  <picture>
+                    <source srcSet={mobileWebp} type="image/webp" />
+                    <img
+                      src={mobilePng}
+                      alt="Mobile Development"
+                      className="Skill-image"
+                    />
+                  </picture>
                   <h1 className="title is-size-4 is-spaced">Mobile</h1>
                   <p className="Skills-intro-paragraph">
                     I craft intuitive and responsive user experiences that

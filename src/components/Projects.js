@@ -1,6 +1,7 @@
 import './style/Projects.css'
 import React from 'react';
-import link from '../assets/style/link.png';
+import linkPng from '../assets/style/link.png';
+import linkWebp from '../assets/style/link.webp';
 
 export default function Projects({ darkMode }) {
     return (
@@ -27,7 +28,11 @@ export default function Projects({ darkMode }) {
                                     <p>Web-based maintenance tracking and upcoming service notifications for all of a user's vehicles.</p>
                                     <a className="link" href="https://github.com/mkravos/Vehicle-Maintenance-Tracker" target="_blank noopener noreferrer">
                                         <span className="tag is-link is-light is-medium">
-                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
+                                            <picture>
+                                                <source srcSet={linkWebp} type="image/webp" />
+                                                <img style={{ height: 20, width: 20 }} src={linkPng} alt="external link" />
+                                            </picture>
+                                            &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
@@ -38,7 +43,11 @@ export default function Projects({ darkMode }) {
                                     <p>An easy-to-use, Dockerized todo list web app I wrote while learning Golang.</p>
                                     <a className="link" href="https://github.com/mkravos/go-todo" target="_blank noopener noreferrer">
                                         <span className="tag is-link is-light is-medium">
-                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
+                                            <picture>
+                                                <source srcSet={linkWebp} type="image/webp" />
+                                                <img style={{ height: 20, width: 20 }} src={linkPng} alt="external link" />
+                                            </picture>
+                                            &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
@@ -49,7 +58,11 @@ export default function Projects({ darkMode }) {
                                     <p>A thought experiment in the form of a GUI-based game, written in Java.</p>
                                     <a className="link" href="https://github.com/mkravos/prisoners-dilemma" target="_blank noopener noreferrer">
                                         <span className="tag is-link is-light is-medium">
-                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
+                                            <picture>
+                                                <source srcSet={linkWebp} type="image/webp" />
+                                                <img style={{ height: 20, width: 20 }} src={linkPng} alt="external link" />
+                                            </picture>
+                                            &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
@@ -60,7 +73,11 @@ export default function Projects({ darkMode }) {
                                     <p>Sudoku-inspired game written for Windows in C#.</p>
                                     <a className="link" href="https://github.com/mkravos/not-sudoku" target="_blank noopener noreferrer">
                                         <span className="tag is-link is-light is-medium">
-                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
+                                            <picture>
+                                                <source srcSet={linkWebp} type="image/webp" />
+                                                <img style={{ height: 20, width: 20 }} src={linkPng} alt="external link" />
+                                            </picture>
+                                            &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
@@ -71,7 +88,11 @@ export default function Projects({ darkMode }) {
                                     <p>Command-line tic-tac-toe game written in Java.</p>
                                     <a className="link" href="https://github.com/mkravos/tic-tac-toe" target="_blank noopener noreferrer">
                                         <span className="tag is-link is-light is-medium">
-                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
+                                            <picture>
+                                                <source srcSet={linkWebp} type="image/webp" />
+                                                <img style={{ height: 20, width: 20 }} src={linkPng} alt="external link" />
+                                            </picture>
+                                            &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>
@@ -82,7 +103,11 @@ export default function Projects({ darkMode }) {
                                     <p>Command-line dungeon crawler game written in C++.</p>
                                     <a className="link" href="https://github.com/mkravos/dungeon-crawler" target="_blank noopener noreferrer">
                                         <span className="tag is-link is-light is-medium">
-                                            <img style={{ height: 20, width: 20 }} src={link} alt="external link" /> &nbsp; github.com
+                                            <picture>
+                                                <source srcSet={linkWebp} type="image/webp" />
+                                                <img style={{ height: 20, width: 20 }} src={linkPng} alt="external link" />
+                                            </picture>
+                                            &nbsp; github.com
                                         </span>
                                     </a>
                                 </div>

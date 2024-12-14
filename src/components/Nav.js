@@ -1,6 +1,7 @@
 import './style/Nav.css'
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.png';
+import logoPng from '../assets/logo.png';
+import logoWebp from '../assets/logo.webp';
 
 export default function Nav({ darkMode, scrollToComponent }) {
     const [mobileNavVisible, setMobileNavVisible] = useState(false);
@@ -45,7 +46,10 @@ export default function Nav({ darkMode, scrollToComponent }) {
             <div className="container">
                 <div className="navbar-brand">
                     <button className="navbar-item" onClick={() => window.location.reload()}>
-                        <img className="logo" src={logo} alt="logo" draggable="false" onContextMenu={(e) => e.preventDefault()} />
+                        <picture>
+                            <source srcSet={logoWebp} type="image/webp" />
+                            <img className="logo" src={logoPng} alt="logo" draggable="false" onContextMenu={(e) => e.preventDefault()} />
+                        </picture>
                     </button>
                     <button className="navbar-burger" aria-label="menu" aria-expanded="false" onClick={showMobileNav}>
                         <span aria-hidden="true"></span>

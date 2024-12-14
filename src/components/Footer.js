@@ -1,6 +1,7 @@
 import './style/Skills.css'
 import React from 'react';
-import logo from '../assets/logo.png';
+import logoPng from '../assets/logo.png';
+import logoWebp from '../assets/logo.webp';
 
 export default function Footer({ darkMode }) {
     const currentYearCalc = new Date().getFullYear();
@@ -18,7 +19,10 @@ export default function Footer({ darkMode }) {
         <div>
             <footer className="Footer section is-primary is-small has-text-centered">
                 <div className="container is-narrow"><a className="logo has-text-white" href="/">
-                    <img className="Footer-logo logo" style={{ width: 100 }} src={logo} alt='logo' />
+                    <picture>
+                        <source srcSet={logoWebp} type="image/webp" />
+                        <img className="Footer-logo logo" style={{ width: 100 }} src={logoPng} alt='logo' />
+                    </picture>
                 </a>
                     <div className="columns is-centered">
                         <div className="column is-one-third">

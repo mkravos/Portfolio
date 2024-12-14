@@ -1,12 +1,19 @@
 import "./style/Figure.css";
 import React from "react";
-import viva from "../assets/projects/viva.png";
-import vivaplus from "../assets/projects/vivaplus.png";
-import latitude from "../assets/projects/latitude.png";
-import percipia from "../assets/clients/percipia-logo.png";
-import asar from "../assets/clients/asar-logo.png";
-import niu from "../assets/clients/niu-logo.png";
-import niuDark from "../assets/clients/niu-logo-dark.png";
+import vivaPng from "../assets/projects/viva.png";
+import vivaplusPng from "../assets/projects/vivaplus.png";
+import latitudePng from "../assets/projects/latitude.png";
+import percipiaPng from "../assets/clients/percipia-logo.png";
+import asarPng from "../assets/clients/asar-logo.png";
+import niuPng from "../assets/clients/niu-logo.png";
+import niuDarkPng from "../assets/clients/niu-logo-dark.png";
+import vivaWebp from "../assets/projects/viva.webp";
+import vivaplusWebp from "../assets/projects/vivaplus.webp";
+import latitudeWebp from "../assets/projects/latitude.webp";
+import percipiaWebp from "../assets/clients/percipia-logo.webp";
+import asarWebp from "../assets/clients/asar-logo.webp";
+import niuWebp from "../assets/clients/niu-logo.webp";
+import niuDarkWebp from "../assets/clients/niu-logo-dark.webp";
 
 export default function Work({ darkMode }) {
   return (
@@ -27,25 +34,28 @@ export default function Work({ darkMode }) {
             <div className="columns is-multiline is-mobile">
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
-                  <img
-                    className="project-thumb"
-                    style={{
-                      width: "75%",
-                      height: "85%",
-                      marginTop: "10%",
-                    }}
-                    src={viva}
-                    alt="Percipia's VIVA Product"
-                  />
+                  <picture>
+                    <source srcSet={vivaWebp} type="image/webp" />
+                    <img
+                      className="project-thumb"
+                      style={{
+                        width: "75%",
+                        height: "85%",
+                        marginTop: "10%",
+                      }}
+                      src={vivaPng}
+                      alt="Percipia's VIVA Product"
+                    />
+                  </picture>
                   <p className="product-title viva">VIVA</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
                       Guided Percipia's voice integration project from an early
-                      stage of development to completion.
+                      stage of development to completion. VIVA is now VIVA+.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
-                      href="https://percipia.com/viva"
+                      href="https://percipia.com/viva+"
                       target="_blank noopener noreferrer"
                     >
                       <span className="Figure-link-text">
@@ -58,15 +68,18 @@ export default function Work({ darkMode }) {
               </div>
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
-                  <img
-                    className="project-thumb"
-                    style={{
-                      width: "70%",
-                      marginTop: "2.5%",
-                    }}
-                    src={vivaplus}
-                    alt="Percipia's VIVA+ Product"
-                  />
+                  <picture>
+                    <source srcSet={vivaplusWebp} type="image/webp" />
+                    <img
+                      className="project-thumb"
+                      style={{
+                        width: "70%",
+                        marginTop: "2.5%",
+                      }}
+                      src={vivaplusPng}
+                      alt="Percipia's VIVA+ Product"
+                    />
+                  </picture>
                   <p className="product-title vivaplus">VIVA+</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
@@ -88,16 +101,19 @@ export default function Work({ darkMode }) {
               </div>
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
-                  <img
-                    className="project-thumb"
-                    style={{
-                      width: "70%",
-                      height: "70%",
-                      marginTop: "15%",
-                    }}
-                    src={latitude}
-                    alt="Percipia's Latitude Product"
-                  />
+                  <picture>
+                    <source srcSet={latitudeWebp} type="image/webp" />
+                    <img
+                      className="project-thumb"
+                      style={{
+                        width: "70%",
+                        height: "70%",
+                        marginTop: "15%",
+                      }}
+                      src={latitudePng}
+                      alt="Percipia's Latitude Product"
+                    />
+                  </picture>
                   <p className="product-title latitude">LATITUDE</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
@@ -160,29 +176,41 @@ export default function Work({ darkMode }) {
             <div className="columns is-centered is-multiline is-mobile">
               <div className="column is-half-mobile is-one-quarter-tablet">
                 <figure className="image is-2x1">
-                  <img
-                    className="client-logo"
-                    src={percipia}
-                    alt="Logo of Percipia"
-                  ></img>
+                  <picture>
+                    <source srcSet={percipiaWebp} type="image/webp" />
+                    <img
+                      className="client-logo"
+                      src={percipiaPng}
+                      alt="Logo of Percipia"
+                    />
+                  </picture>
                 </figure>
               </div>
               <div className="column is-half-mobile is-one-quarter-tablet">
                 <figure className="image is-2x1">
-                  <img
-                    className="client-logo"
-                    src={asar}
-                    alt="Logo of ASAR Digital"
-                  ></img>
+                  <picture>
+                    <source srcSet={asarWebp} type="image/webp" />
+                    <img
+                      className="client-logo"
+                      src={asarPng}
+                      alt="Logo of ASAR Digital"
+                    />
+                  </picture>
                 </figure>
               </div>
               <div className="column is-half-mobile is-one-quarter-tablet">
                 <figure className="image is-2x1">
-                  <img
-                    className="client-logo"
-                    src={darkMode ? niu : niuDark}
-                    alt="Logo of Northern Illinois University"
-                  ></img>
+                  <picture>
+                    <source
+                      srcSet={darkMode ? niuWebp : niuDarkWebp}
+                      type="image/webp"
+                    />
+                    <img
+                      className="client-logo"
+                      src={darkMode ? niuPng : niuDarkPng}
+                      alt="Logo of Northern Illinois University"
+                    />
+                  </picture>
                 </figure>
               </div>
             </div>
