@@ -2,8 +2,9 @@ import './style/Nav.css'
 import React, { useState, useEffect } from 'react';
 import logoPng from '../assets/logo.png';
 import logoWebp from '../assets/logo.webp';
+import ThemeToggle from './ThemeToggle';
 
-export default function Nav({ darkMode, scrollToComponent }) {
+export default function Nav({ darkMode, setDarkMode, scrollToComponent }) {
     const [mobileNavVisible, setMobileNavVisible] = useState(false);
     const [isArrowVisible, setIsArrowVisible] = useState(false);
 
@@ -64,6 +65,10 @@ export default function Nav({ darkMode, scrollToComponent }) {
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'work')}>Work</a>
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'projects')}>Projects</a>
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'socials')}>Socials</a>
+
+                        <div className="Nav-link navbar-item">
+                            <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+                        </div>
 
                         <div className='navbar-item'>
                             <a style={{ marginLeft: `${mobileNavVisible ? 0 : 10}`, marginTop: `${mobileNavVisible ? 10 : 0}` }} className={`button is-rounded has-text-weight-normal`} href="mailto:contact@majkravos.com?subject=Hello, Maj!">Say Hello</a>

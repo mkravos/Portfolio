@@ -18,42 +18,40 @@
 
 .Skills-container {
     margin-top: -200px;
-
-    @media (prefers-color-scheme: dark) {
-        border: 0.1px solid rgba(255, 255, 255, 0.25);
-        border-radius: 10px;
-    }
-
-    @media (prefers-color-scheme: light) {
-        border: 0.1px solid rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-    }
 }
 
-.Skills-container>.box>.content>.columns>.column {
-    @media (prefers-color-scheme: dark) {
-        border-bottom: 0.1px solid rgba(255, 255, 255, 0.25);
-    }
+[data-theme="dark"] .Skills-container {
+    border: 0.1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+}
 
-    @media (prefers-color-scheme: light) {
-        border-bottom: 0.1px solid rgba(0, 0, 0, 0.25);
-    }
+[data-theme="light"] .Skills-container {
+    border: 0.1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+[data-theme="dark"] .Skills-container>.box>.content>.columns>.column {
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="light"] .Skills-container>.box>.content>.columns>.column {
+    border-bottom: 0.1px solid rgba(0, 0, 0, 0.25);
 }
 
 .Middle-column {
-    @media only screen and (min-width: 770px) {
-        @media (prefers-color-scheme: dark) {
-            border-right: 0.1px solid rgba(255, 255, 255, 0.25);
-            border-left: 0.1px solid rgba(255, 255, 255, 0.25);
-        }
+    min-height: 850px;
+}
 
-        @media (prefers-color-scheme: light) {
-            border-right: 0.1px solid rgba(0, 0, 0, 0.25);
-            border-left: 0.1px solid rgba(0, 0, 0, 0.25);
-        }
+@media only screen and (min-width: 770px) {
+    [data-theme="dark"] .Middle-column {
+        border-right: 0.1px solid rgba(255, 255, 255, 0.25);
+        border-left: 0.1px solid rgba(255, 255, 255, 0.25);
     }
 
-    min-height: 850px;
+    [data-theme="light"] .Middle-column {
+        border-right: 0.1px solid rgba(0, 0, 0, 0.25);
+        border-left: 0.1px solid rgba(0, 0, 0, 0.25);
+    }
 }
 
 .Bottom-column {

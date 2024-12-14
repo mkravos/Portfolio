@@ -17,16 +17,25 @@ export default function App() {
     }
   };
 
+  const handleSetDarkMode = (darkMode) => {
+    setDarkMode(darkMode);
+    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+  }
+
   // listens for dark mode or light mode and updates as necessary based on system theme
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = event => {
       const colorScheme = event.matches ? "dark" : "light";
-      setDarkMode(colorScheme === 'dark');
+      handleSetDarkMode(colorScheme === 'dark');
     };
 
-    mediaQuery.addEventListener('change', handleChange);
-    setDarkMode(mediaQuery.matches);
+    if (localStorage.getItem('darkMode') !== null) {
+      handleSetDarkMode(localStorage.getItem('darkMode') === 'true');
+    } else {
+      mediaQuery.addEventListener('change', handleChange);
+      handleSetDarkMode(mediaQuery.matches);
+    }
 
     return () => {
       mediaQuery.removeEventListener('change', handleChange);
@@ -35,7 +44,7 @@ export default function App() {
 
   return (
     <div className='App'>
-      <div id="navbar"><Nav darkMode={darkMode} scrollToComponent={(e, target) => scrollToComponent(e, target)} /></div>
+      <div id="navbar"><Nav darkMode={darkMode} setDarkMode={handleSetDarkMode} scrollToComponent={(e, target) => scrollToComponent(e, target)} /></div>
       <div className='App-content'>
         <div id='introduction'><Introduction darkMode={darkMode} /></div>
         <div id='about-me'><AboutMe darkMode={darkMode} /></div>

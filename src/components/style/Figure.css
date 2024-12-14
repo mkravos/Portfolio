@@ -7,7 +7,7 @@
     margin-left: 7.5%;
 }
 
-.Project-figure > figcaption {
+.Project-figure>figcaption {
     opacity: 0;
     transition: opacity 0.3s;
     position: absolute;
@@ -19,7 +19,7 @@
     padding: 50px;
 }
 
-.Project-figure > figcaption a {
+.Project-figure>figcaption a {
     display: inline-block;
     max-height: 40px;
     overflow: hidden;
@@ -31,14 +31,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    @media (prefers-color-scheme: dark) {
-        background-color: navy;
-    }
+[data-theme="dark"] .Project-figure {
+    background-color: navy;
+}
 
-    @media (prefers-color-scheme: light) {
-        background-color: #3273dc;
-    }
+[data-theme="light"] .Project-figure {
+    background-color: #3273dc;
 }
 
 .Project-figure:hover .project-thumb {

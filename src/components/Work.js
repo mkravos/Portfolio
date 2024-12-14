@@ -47,7 +47,7 @@ export default function Work({ darkMode }) {
                       alt="Percipia's VIVA Product"
                     />
                   </picture>
-                  <p className="product-title viva">VIVA</p>
+                  <p className="product-title has-text-light viva">VIVA</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
                       Guided Percipia's voice integration project from an early
@@ -80,7 +80,7 @@ export default function Work({ darkMode }) {
                       alt="Percipia's VIVA+ Product"
                     />
                   </picture>
-                  <p className="product-title vivaplus">VIVA+</p>
+                  <p className="product-title has-text-light vivaplus">VIVA+</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
                       Collaborated with Amazon's A4H team to create Percipia's
@@ -114,7 +114,7 @@ export default function Work({ darkMode }) {
                       alt="Percipia's Latitude Product"
                     />
                   </picture>
-                  <p className="product-title latitude">LATITUDE</p>
+                  <p className="product-title has-text-light latitude">LATITUDE</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
                       Developed customized versions of the application for
@@ -135,7 +135,7 @@ export default function Work({ darkMode }) {
               </div>
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
-                  <p className="product-title asarconnect">
+                  <p className="product-title has-text-light asarconnect">
                     <span className="asar">ASAR</span>
                     <span className="connect">Connect</span>
                   </p>

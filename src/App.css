@@ -23,28 +23,24 @@
   padding: 0.75rem;
 }
 
-.About-me {
-  @media (prefers-color-scheme: dark) {
-    background-color: navy;
-  }
+[data-theme="dark"] .About-me {
+  background-color: navy;
+}
 
-  @media (prefers-color-scheme: light) {
-    background-color: #3273dc;
-  }
+[data-theme="light"] .About-me {
+  background-color: #3273dc;
 }
 
 .About-me>.container {
   padding-bottom: 150px;
 }
 
-.Footer {
-  @media (prefers-color-scheme: dark) {
-    background-color: navy;
-  }
+[data-theme="dark"] .Footer {
+  background-color: navy;
+}
 
-  @media (prefers-color-scheme: light) {
-    background-color: #3273dc;
-  }
+[data-theme="light"] .Footer {
+  background-color: #3273dc;
 }
 
 .Footer>.container {
@@ -69,14 +65,12 @@
   padding: 2.5px;
 }
 
-.Projects {
-  @media (prefers-color-scheme: dark) {
-    background-color: navy;
-  }
+[data-theme="dark"] .Projects {
+  background-color: navy;
+}
 
-  @media (prefers-color-scheme: light) {
-    background-color: #3273dc;
-  }
+[data-theme="light"] .Projects {
+  background-color: #3273dc;
 }
 
 .Projects>.container {
