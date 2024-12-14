@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style/ThemeToggle.css';
 
 export default function ThemeToggle({ darkMode, setDarkMode }) {
-    const [isDark, setIsDark] = useState(localStorage.getItem('darkMode') === undefined ? darkMode : localStorage.getItem('darkMode') === 'false');
+    const [isDark, setIsDark] = useState(localStorage.getItem('darkMode') === undefined ? darkMode : localStorage.getItem('darkMode') === 'true');
 
     const handleClick = () => {
         setIsDark(!isDark);
