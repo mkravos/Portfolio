@@ -1,22 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './style/ThemeToggle.css';
 
 export default function ThemeToggle({ darkMode, setDarkMode }) {
-    const [isDark, setIsDark] = useState(localStorage.getItem('darkMode') === undefined ? darkMode : localStorage.getItem('darkMode') === 'true');
-
     const handleClick = () => {
-        setIsDark(!isDark);
-        setDarkMode(isDark);
-        localStorage.setItem('darkMode', isDark);
+        const newDarkMode = !darkMode;
+        setDarkMode(newDarkMode);
+        localStorage.setItem('darkMode', String(newDarkMode));
     };
 
     return (
         <button
-            className={`theme-toggle-btn ${isDark ? 'dark' : 'light'}`}
+            className={`theme-toggle-btn ${darkMode ? 'dark' : 'light'}`}
             aria-label="Toggle dark mode"
             onClick={handleClick}
         >
-            {!isDark ? (
+            {darkMode ? (
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="5" />
                     <line x1="12" y1="1" x2="12" y2="3" />
@@ -35,4 +33,4 @@ export default function ThemeToggle({ darkMode, setDarkMode }) {
             )}
         </button>
     );
-} 
+}
