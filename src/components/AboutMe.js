@@ -56,7 +56,7 @@ export default function AboutMe({ darkMode }) {
                   <p className="list-title has-text-link has-text-weight-normal">
                     Languages:
                   </p>
-                  <p className="Skills-paragraph">Go, JavaScript, Python</p>
+                  <p className="Skills-paragraph">Go, JavaScript, Java</p>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Tools &amp; Frameworks:
                   </p>
@@ -135,7 +135,7 @@ export default function AboutMe({ darkMode }) {
                     <li>Gradle</li>
                   </ul>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Libraries:
+                    Frameworks:
                   </p>
                   <ul className="Skills-list">
                     <li>React Native</li>
