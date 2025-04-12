@@ -1,13 +1,13 @@
 import "./style/Figure.css";
 import React from "react";
-import vivaPng from "../assets/projects/viva.png";
+import parallaxLogoPng from "../assets/projects/parallax-logo.png";
 import vivaplusPng from "../assets/projects/vivaplus.png";
 import latitudePng from "../assets/projects/latitude.png";
 import percipiaPng from "../assets/clients/percipia-logo.png";
 import asarPng from "../assets/clients/asar-logo.png";
 import niuPng from "../assets/clients/niu-logo.png";
 import niuDarkPng from "../assets/clients/niu-logo-dark.png";
-import vivaWebp from "../assets/projects/viva.webp";
+import parallaxLogoWebp from "../assets/projects/parallax-logo.webp";
 import vivaplusWebp from "../assets/projects/vivaplus.webp";
 import latitudeWebp from "../assets/projects/latitude.webp";
 import percipiaWebp from "../assets/clients/percipia-logo.webp";
@@ -35,31 +35,34 @@ export default function Work({ darkMode }) {
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <picture>
-                    <source srcSet={vivaWebp} type="image/webp" />
+                    <source srcSet={parallaxLogoWebp} type="image/webp" />
                     <img
                       className="project-thumb"
                       style={{
-                        width: "75%",
-                        height: "85%",
-                        marginTop: "10%",
+                        width: "50%",
+                        height: "65%",
+                        marginTop: "12.5%",
+                        marginLeft: "15%"
                       }}
-                      src={vivaPng}
-                      alt="Percipia's VIVA Product"
+                      src={parallaxLogoPng}
+                      alt="Percipia's Parallax Product"
                     />
                   </picture>
-                  <p className="product-title has-text-light viva">VIVA</p>
+                  <p className="product-title has-text-light viva">PARALLAX</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Guided Percipia's voice integration project from an early
-                      stage of development to completion. VIVA is now VIVA+.
+                      Developed a completely redesigned frontend for the Parallax platform in React,
+                      replacing its legacy Java Server Pages interface. This modern implementation
+                      delivers enhanced user experience with responsive design and optimal
+                      compatibility across all devices and displays.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
-                      href="https://percipia.com/viva+"
+                      href="https://percipia.com/parallax"
                       target="_blank noopener noreferrer"
                     >
                       <span className="Figure-link-text">
-                        Visit VIVA Product Page&nbsp;&nbsp;&gt;
+                        Visit PARALLAX Product Page&nbsp;&nbsp;&gt;
                       </span>
                     </a>
                   </figcaption>
@@ -83,8 +86,9 @@ export default function Work({ darkMode }) {
                   <p className="product-title has-text-light vivaplus">VIVA+</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Collaborated with Amazon's A4H team to create Percipia's
-                      hospitality-integrated multimodal skill for Alexa.
+                      Spearheaded the development of Percipia's hospitality-integrated Alexa skill,
+                      partnering with Amazon's A4H team to create an intuitive multimodal solution that
+                      enhances the guest experience in hotel rooms.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
@@ -117,8 +121,10 @@ export default function Work({ darkMode }) {
                   <p className="product-title has-text-light latitude">LATITUDE</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Developed customized versions of the application for
-                      Percipia's customers, with new API integrations to boot.
+                      Engineered and delivered client-specific versions of the Latitude mobile application
+                      for hotel guests, implementing custom UI/UX designs, feature sets, and third-party API
+                      integrations deployed across numerous hotel properties to enhance the guest experience
+                      and meet the unique requirements of Percipia's hospitality clients.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
