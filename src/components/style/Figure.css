@@ -86,8 +86,9 @@
 }
 
 .asarconnect {
-    padding: 2.5%;
-    font-size: 3em;
+    border-radius: 15px;
+    padding: 3%;
+    font-size: 4.5em;
     width: fit-content;
     height: fit-content;
     background-color: white;
