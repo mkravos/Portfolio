@@ -64,14 +64,10 @@ export default function Nav({ darkMode, setDarkMode, scrollToComponent }) {
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'about-me')}>About Me</a>
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'work')}>Work</a>
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'projects')}>Projects</a>
-                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'socials')}>Socials</a>
+                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'socials')}>Social</a>
 
                         <div className="Nav-link navbar-item">
                             <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-                        </div>
-
-                        <div className='navbar-item'>
-                            <a style={{ marginLeft: `${mobileNavVisible ? 0 : 10}`, marginTop: `${mobileNavVisible ? 10 : 0}` }} className={`button is-rounded has-text-weight-normal`} href="mailto:contact@majkravos.com?subject=Hello, Maj!">Say Hello</a>
                         </div>
                     </div>
                 </div>

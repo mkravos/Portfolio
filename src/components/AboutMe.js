@@ -18,16 +18,13 @@ export default function AboutMe({ darkMode }) {
                 Hi, I’m Maj Kravos.
               </h1>
               <h2 className="subtitle has-text-white-muted is-size-5-desktop has-text-weight-normal">
-                An experienced Software Engineer specializing in full-stack and
-                mobile app development, with a track record in creating quality
-                software for businesses and consumers. Driven by a passion for
-                innovation and a commitment to excellence, I thrive in dynamic
-                environments, leveraging my skills to develop impactful
-                technology.
+                I'm a Software Engineer who loves building full-stack and
+                mobile applications. I've had the joy of creating software that makes
+                a real difference for both businesses and everyday users. What gets me
+                out of bed in the morning? A genuine passion for innovation and crafting
+                excellent experiences. I'm at my best when working in dynamic teams,
+                where I can use my skills to build technology that truly matters.
               </h2>
-              <div className="My-stack title has-text-white-muted is-spaced is-size-4-desktop is-size-4-mobile">
-                My Stack
-              </div>
             </div>
           </div>
         </div>

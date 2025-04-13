@@ -48,7 +48,7 @@ export default function Footer({ darkMode }) {
                             </a>
                         </p>
                     </div>
-                    <div className="copyright has-text-white-muted">Crafted by Maj Kravos<span className="icon" >&copy;</span>{currentYear}</div>
+                    <div className="copyright has-text-white-muted">Maj Kravos<span className="icon" >&copy;</span>{currentYear}</div>
                 </div>
             </footer>
         </div>
