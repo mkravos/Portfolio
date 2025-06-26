@@ -1,13 +1,13 @@
 import "./style/Figure.css";
 import React from "react";
-import parallaxLogoPng from "../assets/projects/parallax-logo.png";
+import parallaxPng from "../assets/projects/parallax.png";
 import vivaplusPng from "../assets/projects/vivaplus.png";
 import latitudePng from "../assets/projects/latitude.png";
 import percipiaPng from "../assets/clients/percipia-logo.png";
 import asarPng from "../assets/clients/asar-logo.png";
 import niuPng from "../assets/clients/niu-logo.png";
 import niuDarkPng from "../assets/clients/niu-logo-dark.png";
-import parallaxLogoWebp from "../assets/projects/parallax-logo.webp";
+import parallaxWebp from "../assets/projects/parallax.webp";
 import vivaplusWebp from "../assets/projects/vivaplus.webp";
 import latitudeWebp from "../assets/projects/latitude.webp";
 import percipiaWebp from "../assets/clients/percipia-logo.webp";
@@ -35,20 +35,20 @@ export default function Work({ darkMode }) {
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <picture>
-                    <source srcSet={parallaxLogoWebp} type="image/webp" />
+                    <source srcSet={parallaxWebp} type="image/webp" />
                     <img
                       className="project-thumb"
                       style={{
-                        width: "50%",
-                        height: "65%",
-                        marginTop: "12.5%",
-                        marginLeft: "15%"
+                        width: "80%",
+                        height: "auto",
+                        marginTop: "5%",
+                        marginLeft: "9%"
                       }}
-                      src={parallaxLogoPng}
+                      src={parallaxPng}
                       alt="Percipia's Parallax Product"
                     />
                   </picture>
-                  <p className="product-title has-text-light viva">PARALLAX</p>
+                  <p className="product-title has-text-light parallax">PARALLAX</p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
                       Developed a completely redesigned frontend for the Parallax platform in React,
