@@ -50,7 +50,7 @@ export default function App() {
         <div id='about-me'><AboutMe darkMode={darkMode} /></div>
         <div id='work'><Work darkMode={darkMode} /></div>
         <div id='projects'><Projects darkMode={darkMode} /></div>
-        <div id='socials'><Footer darkMode={darkMode} /></div>
+        <div id='contact'><Footer darkMode={darkMode} /></div>
       </div>
     </div>
   );

@@ -39,10 +39,8 @@ export default function Work({ darkMode }) {
                     <img
                       className="project-thumb"
                       style={{
-                        width: "80%",
-                        height: "auto",
-                        marginTop: "5%",
-                        marginLeft: "9%"
+                        width: "90%",
+                        height: "auto"
                       }}
                       src={parallaxPng}
                       alt="Percipia's Parallax Product"
@@ -76,8 +74,8 @@ export default function Work({ darkMode }) {
                     <img
                       className="project-thumb"
                       style={{
-                        width: "70%",
-                        marginTop: "2.5%",
+                        width: "80%",
+                        height: "auto"
                       }}
                       src={vivaplusPng}
                       alt="Percipia's VIVA+ Product"
@@ -110,9 +108,8 @@ export default function Work({ darkMode }) {
                     <img
                       className="project-thumb"
                       style={{
-                        width: "70%",
-                        height: "70%",
-                        marginTop: "15%",
+                        width: "80%",
+                        height: "auto"
                       }}
                       src={latitudePng}
                       alt="Percipia's Latitude Product"
@@ -142,8 +139,10 @@ export default function Work({ darkMode }) {
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <p className="product-title has-text-light asarconnect">
-                    <span className="asar">ASAR</span>
-                    <span className="connect">Connect</span>
+                    <div style={{ width: '80%' }}>
+                      <span className="asar">ASAR</span>
+                      <span className="connect">Connect</span>
+                    </div>
                   </p>
                   <figcaption>
                     <h1 className="title has-text-white is-size-6 is-size-4-widescreen">

@@ -4,7 +4,11 @@
         opacity 0.3s,
         transform 0.3s;
     position: relative;
-    margin-left: 7.5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .Project-figure>figcaption {
@@ -68,34 +72,34 @@
 .product-title {
     font-size: 2em;
     font-weight: bold;
-}
-
-.viva {
-    margin-bottom: 20%;
-    margin-left: 50%;
-}
-
-.vivaplus {
-    margin-bottom: 20%;
-    margin-left: 65%;
-}
-
-.latitude {
-    margin-bottom: 35%;
-    margin-left: 10%;
-}
-
-.parallax {
-    margin-bottom: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
 }
 
 .asarconnect {
-    border-radius: 15px;
-    padding: 3%;
-    font-size: 4.5em;
-    width: fit-content;
-    height: fit-content;
-    background-color: white;
+    font-size: 3em;
+    height: auto;
+    text-shadow:
+        0 0 2px #000,
+        0 0 1px #000;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: 10;
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    backdrop-filter: none;
 }
 
 .asar {
@@ -104,4 +108,12 @@
 
 .connect {
     color: #046bd2;
+}
+
+@media screen and (max-width: 768px) {
+    .Project-figure {
+        width: 90vw;
+        max-width: 90vw;
+        box-sizing: border-box;
+    }
 }

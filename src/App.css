@@ -47,7 +47,7 @@
   padding-bottom: 25px;
 }
 
-.footer-icons>.field>a {
+.footer-links>.field>a {
   margin: 10px;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -62,7 +62,17 @@
 }
 
 .Footer-button>.icon {
-  padding: 2.5px;
+  padding: 0;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer-button>.icon svg {
+  color: inherit;
+  width: 1.4em;
+  height: 1.4em;
 }
 
 [data-theme="dark"] .Projects {

@@ -15,15 +15,15 @@ export default function AboutMe({ darkMode }) {
           <div className="columns is-centered">
             <div className="column is-three-fifths">
               <h1 className="title has-text-white is-spaced is-size-3-desktop is-size-4-mobile">
-                Hi, I’m Maj Kravos.
+                Hi, I'm Maj Kravos.
               </h1>
               <h2 className="subtitle has-text-white-muted is-size-5-desktop has-text-weight-normal">
-                I'm a Software Engineer who loves building full-stack and
-                mobile applications. I've had the joy of creating software that makes
-                a real difference for both businesses and everyday users. What gets me
-                out of bed in the morning? A genuine passion for innovation and crafting
-                excellent experiences. I'm at my best when working in dynamic teams,
-                where I can use my skills to build technology that truly matters.
+                I'm a Software Engineer who builds full-stack and
+                mobile applications. I've created software that makes
+                a real difference for both businesses and everyday users.
+                I'm passionate about innovation and crafting
+                excellent experiences. I thrive in collaborative teams,
+                where I can leverage my skills to build technology that matters.
               </h2>
             </div>
           </div>
@@ -53,9 +53,9 @@ export default function AboutMe({ darkMode }) {
                   <p className="list-title has-text-link has-text-weight-normal">
                     Languages:
                   </p>
-                  <p className="Skills-paragraph">Go, JavaScript, Java</p>
+                  <p className="Skills-paragraph">Go, Java, JavaScript, Python</p>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Tools &amp; Frameworks:
+                    Frameworks:
                   </p>
                   <ul className="Skills-list">
                     <li>Node.js</li>
@@ -63,11 +63,11 @@ export default function AboutMe({ darkMode }) {
                     <li>Flask</li>
                   </ul>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Database Management Systems:
+                    Databases:
                   </p>
                   <ul className="Skills-list">
                     <li>PostgreSQL</li>
-                    <li>MariaDB / MySQL</li>
+                    <li>MySQL</li>
                     <li>SQLite</li>
                   </ul>
                 </div>
@@ -90,12 +90,12 @@ export default function AboutMe({ darkMode }) {
                   </p>
                   <p className="Skills-paragraph">HTML, CSS, JavaScript</p>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Libraries &amp; Frameworks:
+                    Frameworks &amp; Libraries:
                   </p>
                   <ul className="Skills-list">
                     <li>React.js</li>
-                    <li>Bulma</li>
-                    <li>Bootstrap</li>
+                    <li>Redux</li>
+                    <li>Material UI</li>
                   </ul>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Tools:
@@ -103,7 +103,7 @@ export default function AboutMe({ darkMode }) {
                   <ul className="Skills-list">
                     <li>Figma</li>
                     <li>Affinity Designer</li>
-                    <li>Affinity Publisher</li>
+                    <li>Sass</li>
                   </ul>
                 </div>
                 <div className="column">
@@ -123,25 +123,28 @@ export default function AboutMe({ darkMode }) {
                   <p className="list-title has-text-link has-text-weight-normal">
                     Languages:
                   </p>
-                  <p className="Skills-paragraph">Java, JavaScript</p>
+                  <p className="Skills-paragraph">Java, Swift, JavaScript</p>
+                  <p className="list-title has-text-link has-text-weight-normal">
+                    Frameworks:
+                  </p>
+                  <ul className="Skills-list">
+                    <li>Android</li>
+                    <li>iOS</li>
+                    <li>React Native</li>
+                  </ul>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Tools:
                   </p>
                   <ul className="Skills-list">
                     <li>Android Studio</li>
                     <li>Gradle</li>
-                  </ul>
-                  <p className="list-title has-text-link has-text-weight-normal">
-                    Frameworks:
-                  </p>
-                  <ul className="Skills-list">
-                    <li>React Native</li>
+                    <li>Xcode</li>
                   </ul>
                 </div>
               </div>
               <div className="Bottom-column column">
                 <h1 className="title is-size-4 is-spaced">
-                  What I use to bring it all together:
+                  DevOps &amp; Infrastructure:
                 </h1>
                 <p className="Skills-intro-paragraph">
                   Docker, GitLab CI/CD, AWS, Heroku, Netlify, Vultr, Git, Linux

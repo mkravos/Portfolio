@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import logoPng from '../assets/logo.png';
 import logoWebp from '../assets/logo.webp';
 import ThemeToggle from './ThemeToggle';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 export default function Nav({ darkMode, setDarkMode, scrollToComponent }) {
     const [mobileNavVisible, setMobileNavVisible] = useState(false);
@@ -10,8 +11,10 @@ export default function Nav({ darkMode, setDarkMode, scrollToComponent }) {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY === 0) {
+            if (window.scrollY <= 10) {
                 setIsArrowVisible(false);
+            } else {
+                setIsArrowVisible(true);
             }
         };
 
@@ -30,7 +33,6 @@ export default function Nav({ darkMode, setDarkMode, scrollToComponent }) {
         }
 
         scrollToComponent(target);
-        setIsArrowVisible(true);
     };
 
     const showMobileNav = () => {
@@ -64,7 +66,7 @@ export default function Nav({ darkMode, setDarkMode, scrollToComponent }) {
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'about-me')}>About Me</a>
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'work')}>Work</a>
                         <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'projects')}>Projects</a>
-                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'socials')}>Social</a>
+                        <a href="/" className={`Nav-link navbar-item has-text-weight-normal`} onClick={(e) => scrollTo(e, 'contact')}>Contact</a>
 
                         <div className="Nav-link navbar-item">
                             <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -72,21 +74,22 @@ export default function Nav({ darkMode, setDarkMode, scrollToComponent }) {
                     </div>
                 </div>
             </div>
-            <UpArrow darkMode={darkMode} isArrowVisible={isArrowVisible} setIsArrowVisible={(yesno) => setIsArrowVisible(yesno)} />
+            <UpArrow darkMode={darkMode} isArrowVisible={isArrowVisible} />
         </nav>
     );
 }
 
-function UpArrow({ darkMode, isArrowVisible, setIsArrowVisible }) {
+function UpArrow({ darkMode, isArrowVisible }) {
     const handleScrollUp = (e) => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        setIsArrowVisible(false)
     };
 
-    if (isArrowVisible) {
-        return (
-            <div i className={`Up-arrow-btn ${darkMode ? 'has-text-info' : 'has-text-link'}`}><button onClick={handleScrollUp}>^</button></div>
-        );
-    }
+    return (
+        <div className={`Up-arrow-btn ${darkMode ? 'has-text-info' : 'has-text-link'} ${isArrowVisible ? 'Up-arrow-visible' : 'Up-arrow-hidden'}`}>
+            <button onClick={handleScrollUp}>
+                <KeyboardArrowUpIcon sx={{ fontSize: 'inherit' }} />
+            </button>
+        </div>
+    );
 }
