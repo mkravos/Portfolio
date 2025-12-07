@@ -2,10 +2,8 @@ import "./style/Skills.css";
 import React from "react";
 import frontendPng from "../assets/style/frontend.png";
 import backendPng from "../assets/style/backend.png";
-import mobilePng from "../assets/style/mobile.png";
 import frontendWebp from "../assets/style/frontend.webp";
 import backendWebp from "../assets/style/backend.webp";
-import mobileWebp from "../assets/style/mobile.webp";
 
 export default function AboutMe({ darkMode }) {
   return (
@@ -18,12 +16,10 @@ export default function AboutMe({ darkMode }) {
                 Hi, I'm Maj Kravos.
               </h1>
               <h2 className="subtitle has-text-white-muted is-size-5-desktop has-text-weight-normal">
-                I'm a Software Engineer who builds full-stack and
-                mobile applications. I've created software that makes
-                a real difference for both businesses and everyday users.
-                I'm passionate about innovation and crafting
-                excellent experiences. I thrive in collaborative teams,
-                where I can leverage my skills to build technology that matters.
+                I'm a software engineer with expertise in full-stack web and mobile development, and DevOps.
+                Innovation and crafting great experiences keep me motivated, and I enjoy building software
+                that creates real impact for both businesses and everyday users.
+                Working with collaborative teams inspires me to turn ideas into technology that matters.
               </h2>
             </div>
           </div>
@@ -53,25 +49,27 @@ export default function AboutMe({ darkMode }) {
                   <p className="list-title has-text-link has-text-weight-normal">
                     Languages:
                   </p>
-                  <p className="Skills-paragraph">Go, Java, JavaScript, Python</p>
+                  <p className="Skills-paragraph">Go, Java, JavaScript</p>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Frameworks:
+                    Frameworks & Libraries:
                   </p>
-                  <ul className="Skills-list">
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>Flask</li>
-                  </ul>
+                  <div className="Skills-list">
+                    <span>Node</span>
+                    <span>Express</span>
+                    <span>Axios</span>
+                    <span>Gin</span>
+                  </div>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Databases:
                   </p>
-                  <ul className="Skills-list">
-                    <li>PostgreSQL</li>
-                    <li>MySQL</li>
-                    <li>SQLite</li>
-                  </ul>
+                  <div className="Skills-list">
+                    <span>PostgreSQL</span>
+                    <span>BoltDB</span>
+                    <span>SQLite</span>
+                  </div>
                 </div>
-                <div className="column Middle-column">
+                <div className="column-divider" />
+                <div className="column">
                   <picture>
                     <source srcSet={frontendWebp} type="image/webp" />
                     <img
@@ -82,7 +80,7 @@ export default function AboutMe({ darkMode }) {
                   </picture>
                   <h1 className="title is-size-4 is-spaced">Frontend</h1>
                   <p className="Skills-intro-paragraph">
-                    I leverage my skills to create simple user interfaces that
+                    I leverage my skills to create clean user interfaces that
                     provide a rich feature set.
                   </p>
                   <p className="list-title has-text-link has-text-weight-normal">
@@ -92,54 +90,17 @@ export default function AboutMe({ darkMode }) {
                   <p className="list-title has-text-link has-text-weight-normal">
                     Frameworks &amp; Libraries:
                   </p>
-                  <ul className="Skills-list">
-                    <li>React.js</li>
-                    <li>Redux</li>
-                    <li>Material UI</li>
-                  </ul>
-                  <p className="list-title has-text-link has-text-weight-normal">
-                    Tools:
-                  </p>
-                  <ul className="Skills-list">
-                    <li>Figma</li>
-                    <li>Affinity Designer</li>
-                    <li>Sass</li>
-                  </ul>
-                </div>
-                <div className="column">
-                  <picture>
-                    <source srcSet={mobileWebp} type="image/webp" />
-                    <img
-                      src={mobilePng}
-                      alt="Mobile Development"
-                      className="Skill-image"
-                    />
-                  </picture>
-                  <h1 className="title is-size-4 is-spaced">Mobile</h1>
-                  <p className="Skills-intro-paragraph">
-                    I craft intuitive and responsive user experiences that
-                    seamlessly integrate functionality across platforms.
-                  </p>
-                  <p className="list-title has-text-link has-text-weight-normal">
-                    Languages:
-                  </p>
-                  <p className="Skills-paragraph">Java, Swift, JavaScript</p>
-                  <p className="list-title has-text-link has-text-weight-normal">
-                    Frameworks:
-                  </p>
-                  <ul className="Skills-list">
-                    <li>Android</li>
-                    <li>iOS</li>
-                    <li>React Native</li>
-                  </ul>
-                  <p className="list-title has-text-link has-text-weight-normal">
-                    Tools:
-                  </p>
-                  <ul className="Skills-list">
-                    <li>Android Studio</li>
-                    <li>Gradle</li>
-                    <li>Xcode</li>
-                  </ul>
+                  <div className="Skills-list">
+                    <span>React</span>
+                    <span>React Native</span>
+                    <span>Redux</span>
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>Material UI</span>
+                    <span>Bulma</span>
+                    <span>React Router</span>
+                    <span>Alexa Presentation Language</span>
+                  </div>
                 </div>
               </div>
               <div className="Bottom-column column">

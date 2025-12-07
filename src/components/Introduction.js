@@ -9,7 +9,7 @@ export default function Introduction({ darkMode }) {
                 <div className="container">
                     <div className="columns is-centered">
                         <div className="column">
-                            <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Full Stack &amp; Mobile App Developer</h1>
+                            <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Full Stack Developer</h1>
                             <h2 className="subtitle is-size-4-tablet">I create innovative and intuitive digital experiences.</h2>
                             <picture>
                                 <source srcSet={avatarWebp} type="image/webp" />
