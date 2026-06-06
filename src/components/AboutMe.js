@@ -16,10 +16,14 @@ export default function AboutMe({ darkMode }) {
                 Hi, I'm Maj Kravos.
               </h1>
               <h2 className="subtitle has-text-white-muted is-size-5-desktop has-text-weight-normal">
-                I'm a software engineer with expertise in full-stack web and mobile development, and DevOps.
-                Innovation and crafting great experiences keep me motivated, and I enjoy building software
-                that creates real impact for both businesses and everyday users.
-                Working with collaborative teams inspires me to turn ideas into technology that matters.
+                I'm an innovative engineer with 4+ years delivering full-stack
+                web and mobile solutions in Go, Java, React, AWS, iOS, and
+                Android. Skilled in databases, Docker, CI/CD, API integrations,
+                and AI-assisted development to drive product growth and
+                efficiency. Experienced with the entire software development
+                lifecycle, from design to deployment and maintenance. Passionate
+                about creating intuitive user experiences and solving complex
+                problems with elegant, scalable solutions.
               </h2>
             </div>
           </div>
@@ -42,20 +46,22 @@ export default function AboutMe({ darkMode }) {
                   <h1 className="title is-size-4 is-spaced">
                     Backend &amp; DB
                   </h1>
-                  <p className="Skills-intro-paragraph">
+                  <p
+                    className="Skills-intro-paragraph"
+                    style={{ marginLeft: 25, marginRight: 25 }}
+                  >
                     I value lightweight, maintainable, and scalable solutions to
                     complex problems.
                   </p>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Languages:
                   </p>
-                  <p className="Skills-paragraph">Go, Java, JavaScript</p>
+                  <p className="Skills-paragraph">Go, Java</p>
                   <p className="list-title has-text-link has-text-weight-normal">
-                    Frameworks & Libraries:
+                    Frameworks &amp; Libraries:
                   </p>
                   <div className="Skills-list">
-                    <span>Node</span>
-                    <span>Express</span>
+                    <span>Node.js</span>
                     <span>Axios</span>
                     <span>Gin</span>
                   </div>
@@ -78,28 +84,37 @@ export default function AboutMe({ darkMode }) {
                       className="Skill-image"
                     />
                   </picture>
-                  <h1 className="title is-size-4 is-spaced">Frontend</h1>
-                  <p className="Skills-intro-paragraph">
+                  <h1 className="title is-size-4 is-spaced">
+                    Frontend &amp; Mobile
+                  </h1>
+                  <p
+                    className="Skills-intro-paragraph"
+                    style={{ marginLeft: 25, marginRight: 25 }}
+                  >
                     I leverage my skills to create clean user interfaces that
                     provide a rich feature set.
                   </p>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Languages:
                   </p>
-                  <p className="Skills-paragraph">HTML, CSS, JavaScript</p>
+                  <p className="Skills-paragraph">
+                    JavaScript, TypeScript, HTML, CSS
+                  </p>
                   <p className="list-title has-text-link has-text-weight-normal">
                     Frameworks &amp; Libraries:
                   </p>
                   <div className="Skills-list">
                     <span>React</span>
-                    <span>React Native</span>
-                    <span>Redux</span>
-                    <span>Next.js</span>
-                    <span>TypeScript</span>
-                    <span>Material UI</span>
-                    <span>Bulma</span>
-                    <span>React Router</span>
                     <span>Alexa Presentation Language</span>
+                    <span>Gradle</span>
+                  </div>
+                  <p className="list-title has-text-link has-text-weight-normal">
+                    Mobile:
+                  </p>
+                  <div className="Skills-list">
+                    <span>React Native</span>
+                    <span>Swift (iOS)</span>
+                    <span>Kotlin (Android)</span>
                   </div>
                 </div>
               </div>
@@ -107,8 +122,18 @@ export default function AboutMe({ darkMode }) {
                 <h1 className="title is-size-4 is-spaced">
                   DevOps &amp; Infrastructure:
                 </h1>
-                <p className="Skills-intro-paragraph">
-                  Docker, GitLab CI/CD, AWS, Heroku, Netlify, Vultr, Git, Linux
+                <p
+                  className="Skills-intro-paragraph"
+                  style={{ display: "flex", flexDirection: "column" }}
+                >
+                  <span>
+                    Docker, GitLab CI/CD &amp; GitHub Actions, AWS, Heroku,
+                    Netlify, Vultr, Git, Linux, Fastlane
+                  </span>
+                  <span style={{ marginTop: 5 }}>
+                    Ollama (self-hosted LLMs), Claude Code, GitHub Copilot,
+                    OpenAI Codex, and other AI-assisted development tools
+                  </span>
                 </p>
               </div>
             </div>

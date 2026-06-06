@@ -40,19 +40,22 @@ export default function Work({ darkMode }) {
                       className="project-thumb"
                       style={{
                         width: "90%",
-                        height: "auto"
+                        height: "auto",
                       }}
                       src={parallaxPng}
                       alt="Percipia's Parallax Product"
                     />
                   </picture>
-                  <p className="product-title has-text-light parallax">PARALLAX</p>
+                  <p className="product-title has-text-light parallax">
+                    PARALLAX
+                  </p>
                   <figcaption>
-                    <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Developed a completely redesigned frontend for the Parallax platform in React,
-                      replacing its legacy Java Server Pages interface. This modern implementation
-                      delivers enhanced user experience with responsive design and optimal
-                      compatibility across all devices and displays.
+                    <h1 className="title has-text-white is-size-6 is-size-4-widescreen">
+                      Developed a completely redesigned frontend for the
+                      Parallax platform in React, replacing its legacy Java
+                      Server Pages interface. This modern implementation
+                      delivers enhanced user experience with responsive design
+                      and optimal compatibility across all devices and displays.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
@@ -75,7 +78,7 @@ export default function Work({ darkMode }) {
                       className="project-thumb"
                       style={{
                         width: "80%",
-                        height: "auto"
+                        height: "auto",
                       }}
                       src={vivaplusPng}
                       alt="Percipia's VIVA+ Product"
@@ -83,10 +86,12 @@ export default function Work({ darkMode }) {
                   </picture>
                   <p className="product-title has-text-light vivaplus">VIVA+</p>
                   <figcaption>
-                    <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Spearheaded the development of Percipia's hospitality-integrated Alexa skill,
-                      partnering with Amazon's A4H team to create an intuitive multimodal solution that
-                      enhances the guest experience in hotel rooms.
+                    <h1 className="title has-text-white is-size-6 is-size-4-widescreen">
+                      Spearheaded the development of Percipia's
+                      hospitality-integrated Alexa skill, partnering with
+                      Amazon's A4H team to create an intuitive multimodal
+                      solution that enhances the guest experience in hotel
+                      rooms.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
@@ -109,19 +114,23 @@ export default function Work({ darkMode }) {
                       className="project-thumb"
                       style={{
                         width: "80%",
-                        height: "auto"
+                        height: "auto",
                       }}
                       src={latitudePng}
                       alt="Percipia's Latitude Product"
                     />
                   </picture>
-                  <p className="product-title has-text-light latitude">LATITUDE</p>
+                  <p className="product-title has-text-light latitude">
+                    LATITUDE
+                  </p>
                   <figcaption>
-                    <h1 className="title has-text-white is-size-5 is-size-4-widescreen">
-                      Engineered and delivered client-specific versions of the Latitude mobile application
-                      for hotel guests, implementing custom UI/UX designs, feature sets, and third-party API
-                      integrations deployed across numerous hotel properties to enhance the guest experience
-                      and meet the unique requirements of Percipia's hospitality clients.
+                    <h1 className="title has-text-white is-size-6 is-size-4-widescreen">
+                      Engineered and delivered client-specific versions of the
+                      Latitude mobile application for hotel guests, implementing
+                      custom UI/UX designs, feature sets, and third-party API
+                      integrations deployed across numerous hotel properties to
+                      enhance the guest experience and meet the unique
+                      requirements of Percipia's hospitality clients.
                     </h1>
                     <a
                       className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
@@ -139,7 +148,7 @@ export default function Work({ darkMode }) {
               <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <p className="product-title has-text-light asarconnect">
-                    <div style={{ width: '80%' }}>
+                    <div style={{ width: "80%" }}>
                       <span className="asar">ASAR</span>
                       <span className="connect">Connect</span>
                     </div>
