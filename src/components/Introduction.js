@@ -1,20 +1,24 @@
 import React from "react";
+import { Hero, Container, Columns, Heading } from "react-bulma-components";
 import avatarPng from "../assets/style/MajProfile.png";
 import avatarWebp from "../assets/style/MajProfile.webp";
 
 export default function Introduction({ darkMode }) {
   return (
-    <section className="hero is-transparent has-text-centered">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns is-centered">
-            <div className="column">
-              <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+    <Hero transparent className="has-text-centered">
+      <Hero.Body>
+        <Container>
+          <Columns centered>
+            <Columns.Column>
+              <Heading
+                spaced
+                className="is-size-1-desktop is-size-2-tablet is-size-3-mobile"
+              >
                 Web &amp; Mobile Software Engineer
-              </h1>
-              <h2 className="subtitle is-size-4-tablet">
+              </Heading>
+              <Heading subtitle renderAs="h2" className="is-size-4-tablet">
                 I create innovative and intuitive digital experiences.
-              </h2>
+              </Heading>
               <picture>
                 <source srcSet={avatarWebp} type="image/webp" />
                 <img
@@ -24,10 +28,10 @@ export default function Introduction({ darkMode }) {
                   alt="avatar"
                 />
               </picture>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </Columns.Column>
+          </Columns>
+        </Container>
+      </Hero.Body>
+    </Hero>
   );
 }

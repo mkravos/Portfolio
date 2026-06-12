@@ -1,5 +1,6 @@
 import "./style/Skills.css";
 import React from "react";
+import { Section, Container, Columns, Box, Content, Heading } from "react-bulma-components";
 import frontendPng from "../assets/style/frontend.png";
 import backendPng from "../assets/style/backend.png";
 import frontendWebp from "../assets/style/frontend.webp";
@@ -8,14 +9,21 @@ import backendWebp from "../assets/style/backend.webp";
 export default function AboutMe({ darkMode }) {
   return (
     <div>
-      <section className="About-me section is-medium has-text-centered is-long">
-        <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-three-fifths">
-              <h1 className="title has-text-white is-spaced is-size-3-desktop is-size-4-mobile">
+      <Section size="medium" className="About-me has-text-centered is-long">
+        <Container>
+          <Columns centered>
+            <Columns.Column size="three-fifths">
+              <Heading
+                spaced
+                className="has-text-white is-size-3-desktop is-size-4-mobile"
+              >
                 Hi, I'm Maj Kravos.
-              </h1>
-              <h2 className="subtitle has-text-white-muted is-size-5-desktop has-text-weight-normal">
+              </Heading>
+              <Heading
+                subtitle
+                renderAs="h2"
+                className="has-text-white-muted is-size-5-desktop has-text-weight-normal"
+              >
                 I'm an innovative engineer with 4+ years delivering full-stack
                 web and mobile solutions in Go, Java, React, AWS, iOS, and
                 Android. Skilled in databases, Docker, CI/CD, API integrations,
@@ -24,17 +32,17 @@ export default function AboutMe({ darkMode }) {
                 lifecycle, from design to deployment and maintenance. Passionate
                 about creating intuitive user experiences and solving complex
                 problems with elegant, scalable solutions.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="section skills has-text-centered">
-        <div className="container Skills-container is-narrow">
-          <div className="box">
-            <div className="content">
-              <div className="columns is-centered">
-                <div className="column">
+              </Heading>
+            </Columns.Column>
+          </Columns>
+        </Container>
+      </Section>
+      <Section className="skills has-text-centered">
+        <Container className="Skills-container is-narrow">
+          <Box>
+            <Content>
+              <Columns centered>
+                <Columns.Column>
                   <picture>
                     <source srcSet={backendWebp} type="image/webp" />
                     <img
@@ -43,9 +51,9 @@ export default function AboutMe({ darkMode }) {
                       className="Skill-image"
                     />
                   </picture>
-                  <h1 className="title is-size-4 is-spaced">
+                  <Heading spaced className="is-size-4">
                     Backend &amp; DB
-                  </h1>
+                  </Heading>
                   <p
                     className="Skills-intro-paragraph"
                     style={{ marginLeft: 25, marginRight: 25 }}
@@ -73,9 +81,9 @@ export default function AboutMe({ darkMode }) {
                     <span>BoltDB</span>
                     <span>SQLite</span>
                   </div>
-                </div>
+                </Columns.Column>
                 <div className="column-divider" />
-                <div className="column">
+                <Columns.Column>
                   <picture>
                     <source srcSet={frontendWebp} type="image/webp" />
                     <img
@@ -84,9 +92,9 @@ export default function AboutMe({ darkMode }) {
                       className="Skill-image"
                     />
                   </picture>
-                  <h1 className="title is-size-4 is-spaced">
+                  <Heading spaced className="is-size-4">
                     Frontend &amp; Mobile
-                  </h1>
+                  </Heading>
                   <p
                     className="Skills-intro-paragraph"
                     style={{ marginLeft: 25, marginRight: 25 }}
@@ -116,12 +124,12 @@ export default function AboutMe({ darkMode }) {
                     <span>Swift (iOS)</span>
                     <span>Kotlin (Android)</span>
                   </div>
-                </div>
-              </div>
+                </Columns.Column>
+              </Columns>
               <div className="Bottom-column column">
-                <h1 className="title is-size-4 is-spaced">
+                <Heading spaced className="is-size-4">
                   DevOps &amp; Infrastructure:
-                </h1>
+                </Heading>
                 <p
                   className="Skills-intro-paragraph"
                   style={{ display: "flex", flexDirection: "column" }}
@@ -136,10 +144,10 @@ export default function AboutMe({ darkMode }) {
                   </span>
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </Content>
+          </Box>
+        </Container>
+      </Section>
     </div>
   );
 }

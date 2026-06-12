@@ -1,6 +1,7 @@
 import "./style/Blog.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Section, Container, Heading } from "react-bulma-components";
 import { loadPosts, formatDate } from "../lib/posts";
 
 export default function Blog({ darkMode }) {
@@ -17,15 +18,15 @@ export default function Blog({ darkMode }) {
   }, []);
 
   return (
-    <section className="section">
-      <div className="container Blog-container">
-        <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+    <Section>
+      <Container className="Blog-container">
+        <Heading spaced className="is-size-1-desktop is-size-2-tablet is-size-3-mobile">
           Blog
-        </h1>
-        <h2 className="subtitle is-size-4-tablet">
+        </Heading>
+        <Heading subtitle renderAs="h2" className="is-size-4-tablet">
           My personal corner of the internet where I share updates on my
           projects, thoughts on software development, and more.
-        </h2>
+        </Heading>
 
         <div className="Blog-list">
           {posts === null && <p className="Blog-body">Loading…</p>}
@@ -42,15 +43,15 @@ export default function Blog({ darkMode }) {
                 {post.date && (
                   <p className="Blog-date is-size-6">{formatDate(post.date)}</p>
                 )}
-                <h3 className="title is-size-4-desktop is-size-5-mobile is-spaced">
+                <Heading renderAs="h3" spaced className="is-size-4-desktop is-size-5-mobile">
                   {post.title}
-                </h3>
+                </Heading>
                 {post.excerpt && <p className="Blog-body">{post.excerpt}</p>}
                 <span className="Blog-readmore">Read more →</span>
               </Link>
             ))}
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }

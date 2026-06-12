@@ -1,6 +1,7 @@
 import "./style/Blog.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Section, Container, Heading } from "react-bulma-components";
 import { getPost, formatDate } from "../lib/posts";
 import { applySeo } from "../lib/seo";
 
@@ -13,9 +14,13 @@ function copyrightYear() {
 function Block({ block }) {
   if (block.type === "heading") {
     return (
-      <h2 className="Blog-heading title is-size-4-desktop is-size-5-mobile has-text-weight-semibold is-spaced">
+      <Heading
+        renderAs="h2"
+        spaced
+        className="Blog-heading is-size-4-desktop is-size-5-mobile has-text-weight-semibold"
+      >
         {renderInline(block.text)}
-      </h2>
+      </Heading>
     );
   }
 
@@ -129,43 +134,43 @@ export default function BlogPost({ slug }) {
 
   if (post === undefined) {
     return (
-      <section className="section">
-        <div className="container Blog-container">
+      <Section>
+        <Container className="Blog-container">
           <p className="Blog-body">Loading…</p>
-        </div>
-      </section>
+        </Container>
+      </Section>
     );
   }
 
   if (post === null) {
     return (
-      <section className="section">
-        <div className="container Blog-container">
-          <h1 className="title is-spaced is-size-2-desktop is-size-3-mobile">
+      <Section>
+        <Container className="Blog-container">
+          <Heading spaced className="is-size-2-desktop is-size-3-mobile">
             Post not found
-          </h1>
+          </Heading>
           <p className="Blog-body">
             <Link to="/blog">← Back to all posts</Link>
           </p>
-        </div>
-      </section>
+        </Container>
+      </Section>
     );
   }
 
   return (
-    <section className="section">
-      <article className="container Blog-container">
+    <Section>
+      <Container renderAs="article" className="Blog-container">
         <Link className="Blog-backlink" to="/blog">
           ← All posts
         </Link>
 
-        <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+        <Heading spaced className="is-size-1-desktop is-size-2-tablet is-size-3-mobile">
           {post.title}
-        </h1>
+        </Heading>
         {post.subtitle && (
-          <h2 className="subtitle is-size-4-tablet has-text-weight-normal">
+          <Heading subtitle renderAs="h2" className="is-size-4-tablet has-text-weight-normal">
             {post.subtitle}
-          </h2>
+          </Heading>
         )}
         {post.date && (
           <p className="Blog-date is-size-6">{formatDate(post.date)}</p>
@@ -180,7 +185,7 @@ export default function BlogPost({ slug }) {
         <div className="Blog-copyright">
           Maj Kravos<span className="icon">&copy;</span>{copyrightYear()}
         </div>
-      </article>
-    </section>
+      </Container>
+    </Section>
   );
 }

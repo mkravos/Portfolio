@@ -1,5 +1,6 @@
 import './style/Skills.css'
 import React from 'react';
+import { Section, Container, Columns, Heading, Button } from 'react-bulma-components';
 import logoPng from '../assets/logo.png';
 import logoWebp from '../assets/logo.webp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -20,40 +21,40 @@ export default function Footer({ darkMode }) {
 
     return (
         <div>
-            <footer className="Footer section is-primary is-small has-text-centered">
-                <div className="container is-narrow"><a className="logo has-text-white" href="/">
+            <Section renderAs="footer" className="Footer is-primary is-small has-text-centered">
+                <Container className="is-narrow"><a className="logo has-text-white" href="/">
                     <picture>
                         <source srcSet={logoWebp} type="image/webp" />
                         <img className="Footer-logo logo" style={{ width: 100 }} src={logoPng} alt='logo' />
                     </picture>
                 </a>
-                    <div className="columns is-centered">
-                        <div className="column is-one-third">
-                            <h1 className="title is-size-4 has-text-white-muted has-text-weight-normal">Get in touch</h1>
-                        </div>
-                    </div>
+                    <Columns centered>
+                        <Columns.Column size="one-third">
+                            <Heading className="is-size-4 has-text-white-muted has-text-weight-normal">Get in touch</Heading>
+                        </Columns.Column>
+                    </Columns>
                     <div className="footer-links">
                         <p className="field">
-                            <a className="Footer-button button is-medium" href="https://www.linkedin.com/in/majkravos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                            <Button renderAs="a" size="medium" className="Footer-button" href="https://www.linkedin.com/in/majkravos/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
                                 <span className="icon is-small">
                                     <LinkedInIcon sx={{ fontSize: 'inherit' }} />
                                 </span>
-                            </a>
-                            <a className="Footer-button button is-medium" href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                            </Button>
+                            <Button renderAs="a" size="medium" className="Footer-button" href="https://github.com/mkravos" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
                                 <span className="icon is-small">
                                     <GitHubIcon sx={{ fontSize: 'inherit' }} />
                                 </span>
-                            </a>
-                            <a className="Footer-button button is-medium" href="mailto:maj@kravos.me" aria-label="Email">
+                            </Button>
+                            <Button renderAs="a" size="medium" className="Footer-button" href="mailto:maj@kravos.me" aria-label="Email">
                                 <span className="icon is-small">
                                     <EmailIcon sx={{ fontSize: 'inherit' }} />
                                 </span>
-                            </a>
+                            </Button>
                         </p>
                     </div>
                     <div className="copyright has-text-white-muted">Maj Kravos<span className="icon" >&copy;</span>{currentYear}</div>
-                </div>
-            </footer>
+                </Container>
+            </Section>
         </div>
     );
 }

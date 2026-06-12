@@ -1,5 +1,6 @@
 import "./style/Figure.css";
 import React from "react";
+import { Section, Container, Columns, Heading, Button } from "react-bulma-components";
 import parallaxPng from "../assets/projects/parallax.png";
 import vivaplusPng from "../assets/projects/vivaplus.png";
 import latitudePng from "../assets/projects/latitude.png";
@@ -15,24 +16,39 @@ import asarWebp from "../assets/clients/asar-logo.webp";
 import niuWebp from "../assets/clients/niu-logo.webp";
 import niuDarkWebp from "../assets/clients/niu-logo-dark.webp";
 
+function ProjectButton({ darkMode, href, children }) {
+  return (
+    <Button
+      renderAs="a"
+      color={darkMode ? "info" : "white"}
+      outlined
+      rounded
+      href={href}
+      target="_blank noopener noreferrer"
+    >
+      <span className="Figure-link-text">{children}</span>
+    </Button>
+  );
+}
+
 export default function Work({ darkMode }) {
   return (
     <div>
-      <section className="section work is-medium is-transparent has-text-centered">
-        <div className="container is-narrow">
-          <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">
+      <Section size="medium" className="work is-transparent has-text-centered">
+        <Container className="is-narrow">
+          <Heading spaced className="is-size-3-desktop is-size-4-mobile">
             My Recent Work
-          </h1>
-          <h2 className="Work-subtitle subtitle is-size-5-desktop">
+          </Heading>
+          <Heading subtitle renderAs="h2" className="Work-subtitle is-size-5-desktop">
             Here are a few products I've worked on. Want to see other
             examples?&nbsp;
             <a href="mailto:contact@majkravos.com?subject=Maj, I'd like to see more of your work!">
               Email me.
             </a>
-          </h2>
+          </Heading>
           <div className="project-grid">
-            <div className="columns is-multiline is-mobile">
-              <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
+            <Columns multiline className="is-mobile">
+              <Columns.Column className="is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <picture>
                     <source srcSet={parallaxWebp} type="image/webp" />
@@ -57,20 +73,14 @@ export default function Work({ darkMode }) {
                       delivers enhanced user experience with responsive design
                       and optimal compatibility across all devices and displays.
                     </h1>
-                    <a
-                      className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
-                      href="https://percipia.com/parallax"
-                      target="_blank noopener noreferrer"
-                    >
-                      <span className="Figure-link-text">
-                        Visit PARALLAX Product Page&nbsp;&nbsp;&gt;
-                      </span>
-                    </a>
+                    <ProjectButton darkMode={darkMode} href="https://percipia.com/parallax">
+                      Visit PARALLAX Product Page&nbsp;&nbsp;&gt;
+                    </ProjectButton>
                   </figcaption>
                   <div className="overlay"></div>
                 </figure>
-              </div>
-              <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
+              </Columns.Column>
+              <Columns.Column className="is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <picture>
                     <source srcSet={vivaplusWebp} type="image/webp" />
@@ -93,20 +103,14 @@ export default function Work({ darkMode }) {
                       solution that enhances the guest experience in hotel
                       rooms.
                     </h1>
-                    <a
-                      className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
-                      href="https://percipia.com/viva+"
-                      target="_blank noopener noreferrer"
-                    >
-                      <span className="Figure-link-text">
-                        Visit VIVA+ Product Page&nbsp;&nbsp;&gt;
-                      </span>
-                    </a>
+                    <ProjectButton darkMode={darkMode} href="https://percipia.com/viva+">
+                      Visit VIVA+ Product Page&nbsp;&nbsp;&gt;
+                    </ProjectButton>
                   </figcaption>
                   <div className="overlay"></div>
                 </figure>
-              </div>
-              <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
+              </Columns.Column>
+              <Columns.Column className="is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <picture>
                     <source srcSet={latitudeWebp} type="image/webp" />
@@ -132,20 +136,14 @@ export default function Work({ darkMode }) {
                       enhance the guest experience and meet the unique
                       requirements of Percipia's hospitality clients.
                     </h1>
-                    <a
-                      className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
-                      href="https://percipia.com/mobilesolution"
-                      target="_blank noopener noreferrer"
-                    >
-                      <span className="Figure-link-text">
-                        Visit LATITUDE Product Page&nbsp;&nbsp;&gt;
-                      </span>
-                    </a>
+                    <ProjectButton darkMode={darkMode} href="https://percipia.com/mobilesolution">
+                      Visit LATITUDE Product Page&nbsp;&nbsp;&gt;
+                    </ProjectButton>
                   </figcaption>
                   <div className="overlay"></div>
                 </figure>
-              </div>
-              <div className="column is-12-mobile is-half-tablet is-one-half-desktop">
+              </Columns.Column>
+              <Columns.Column className="is-12-mobile is-half-tablet is-one-half-desktop">
                 <figure className="Project-figure image is-3by2">
                   <p className="product-title has-text-light asarconnect">
                     <div style={{ width: "80%" }}>
@@ -160,35 +158,29 @@ export default function Work({ darkMode }) {
                       track of, and manage their freelancers and offshore
                       employees seamlessly.
                     </h1>
-                    <a
-                      className={`button ${darkMode ? "is-info" : "is-white"} is-outlined is-rounded`}
-                      href="https://asardigital.com/"
-                      target="_blank noopener noreferrer"
-                    >
-                      <span className="Figure-link-text">
-                        Visit ASAR Digital's Website&nbsp;&nbsp;&gt;
-                      </span>
-                    </a>
+                    <ProjectButton darkMode={darkMode} href="https://asardigital.com/">
+                      Visit ASAR Digital's Website&nbsp;&nbsp;&gt;
+                    </ProjectButton>
                   </figcaption>
                   <div className="overlay"></div>
                 </figure>
-              </div>
-            </div>
+              </Columns.Column>
+            </Columns>
           </div>
-        </div>
-      </section>
-      <section className="section clients is-medium is-transparent has-text-centered">
-        <div className="container is-narrow">
-          <div className="columns is-centered">
-            <div className="Clients-title-column column is-half">
-              <h1 className="title is-size-3-desktop is-size-4-tablet is-size-5-mobile">
+        </Container>
+      </Section>
+      <Section size="medium" className="clients is-transparent has-text-centered">
+        <Container className="is-narrow">
+          <Columns centered>
+            <Columns.Column className="Clients-title-column" size="half">
+              <Heading className="is-size-3-desktop is-size-4-tablet is-size-5-mobile">
                 I'm proud to have worked at some impactful companies:
-              </h1>
-            </div>
-          </div>
+              </Heading>
+            </Columns.Column>
+          </Columns>
           <div className="client-grid">
-            <div className="columns is-centered is-multiline is-mobile">
-              <div className="column is-half-mobile is-one-quarter-tablet">
+            <Columns centered multiline className="is-mobile">
+              <Columns.Column className="is-half-mobile is-one-quarter-tablet">
                 <figure className="image is-2x1">
                   <picture>
                     <source srcSet={percipiaWebp} type="image/webp" />
@@ -199,8 +191,8 @@ export default function Work({ darkMode }) {
                     />
                   </picture>
                 </figure>
-              </div>
-              <div className="column is-half-mobile is-one-quarter-tablet">
+              </Columns.Column>
+              <Columns.Column className="is-half-mobile is-one-quarter-tablet">
                 <figure className="image is-2x1">
                   <picture>
                     <source srcSet={asarWebp} type="image/webp" />
@@ -211,8 +203,8 @@ export default function Work({ darkMode }) {
                     />
                   </picture>
                 </figure>
-              </div>
-              <div className="column is-half-mobile is-one-quarter-tablet">
+              </Columns.Column>
+              <Columns.Column className="is-half-mobile is-one-quarter-tablet">
                 <figure className="image is-2x1">
                   <picture>
                     <source
@@ -226,11 +218,11 @@ export default function Work({ darkMode }) {
                     />
                   </picture>
                 </figure>
-              </div>
-            </div>
+              </Columns.Column>
+            </Columns>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
     </div>
   );
 }
