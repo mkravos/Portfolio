@@ -1,6 +1,7 @@
 import "./style/Nav.css";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Navbar, Container } from "react-bulma-components";
 import logoPng from "../assets/logo.png";
 import logoWebp from "../assets/logo.webp";
 import ThemeToggle from "./ThemeToggle";
@@ -26,11 +27,9 @@ export default function Nav({ darkMode, setDarkMode, inBlog, goToSection, openBl
     };
   }, []);
 
-  const closeMobileNav = () => {
-    if (mobileNavVisible) {
-      showMobileNav(false);
-    }
-  };
+  const closeMobileNav = () => setMobileNavVisible(false);
+
+  const toggleMobileNav = () => setMobileNavVisible((visible) => !visible);
 
   const scrollTo = (e, target) => {
     e.preventDefault();
@@ -50,27 +49,15 @@ export default function Nav({ darkMode, setDarkMode, inBlog, goToSection, openBl
     goHome();
   };
 
-  const showMobileNav = () => {
-    const target = document.getElementById("navMenu");
-    const burger = document.querySelector(".navbar-burger");
-
-    burger.classList.toggle("is-active");
-    target.classList.toggle("is-active");
-    setMobileNavVisible(!mobileNavVisible);
-  };
-
   return (
-    <nav
-      className="navbar is-transparent"
-      role="navigation"
+    <Navbar
+      transparent
+      active={mobileNavVisible}
       aria-label="main navigation"
     >
-      <div className="container">
-        <div className="navbar-brand">
-          <button
-            className="navbar-item"
-            onClick={goToHome}
-          >
+      <Container>
+        <Navbar.Brand>
+          <Navbar.Item renderAs="button" onClick={goToHome}>
             <picture>
               <source srcSet={logoWebp} type="image/webp" />
               <img
@@ -81,77 +68,77 @@ export default function Nav({ darkMode, setDarkMode, inBlog, goToSection, openBl
                 onContextMenu={(e) => e.preventDefault()}
               />
             </picture>
-          </button>
-          <button
-            className="navbar-burger"
+          </Navbar.Item>
+          <Navbar.Burger
             aria-label="menu"
-            aria-expanded="false"
-            onClick={showMobileNav}
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </button>
-        </div>
-        <div className="navbar-menu" id="navMenu">
-          <div className="navbar-end">
+            aria-expanded={mobileNavVisible}
+            onClick={toggleMobileNav}
+          />
+        </Navbar.Brand>
+        <Navbar.Menu id="navMenu">
+          <Navbar.Container align="right">
             {inBlog ? (
-              <Link
+              <Navbar.Item
+                renderAs={Link}
                 to="/"
-                className={`Nav-link navbar-item has-text-weight-normal`}
+                className="Nav-link has-text-weight-normal"
                 onClick={goToHome}
               >
                 Back to Main Site
-              </Link>
+              </Navbar.Item>
             ) : (
               <>
-                <a
+                <Navbar.Item
+                  renderAs="a"
                   href="/"
-                  className={`Nav-link navbar-item has-text-weight-normal`}
+                  className="Nav-link has-text-weight-normal"
                   onClick={(e) => scrollTo(e, "about-me")}
                 >
                   About Me
-                </a>
-                <a
+                </Navbar.Item>
+                <Navbar.Item
+                  renderAs="a"
                   href="/"
-                  className={`Nav-link navbar-item has-text-weight-normal`}
+                  className="Nav-link has-text-weight-normal"
                   onClick={(e) => scrollTo(e, "work")}
                 >
                   Work
-                </a>
-                <a
+                </Navbar.Item>
+                <Navbar.Item
+                  renderAs="a"
                   href="/"
-                  className={`Nav-link navbar-item has-text-weight-normal`}
+                  className="Nav-link has-text-weight-normal"
                   onClick={(e) => scrollTo(e, "projects")}
                 >
                   Projects
-                </a>
-                <a
+                </Navbar.Item>
+                <Navbar.Item
+                  renderAs="a"
                   href="/"
-                  className={`Nav-link navbar-item has-text-weight-normal`}
+                  className="Nav-link has-text-weight-normal"
                   onClick={(e) => scrollTo(e, "contact")}
                 >
                   Contact
-                </a>
-                <Link
+                </Navbar.Item>
+                <Navbar.Item
+                  renderAs={Link}
                   to="/blog"
-                  className={`Nav-link navbar-item has-text-weight-normal`}
+                  className="Nav-link has-text-weight-normal"
                   onClick={goToBlog}
                 >
                   Blog
-                </Link>
+                </Navbar.Item>
               </>
             )}
 
-            <div className="Nav-link navbar-item">
+            <Navbar.Item renderAs="div" className="Nav-link">
               <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-            </div>
-          </div>
-        </div>
-      </div>
+            </Navbar.Item>
+          </Navbar.Container>
+        </Navbar.Menu>
+      </Container>
       <UpArrow darkMode={darkMode} isArrowVisible={isArrowVisible} />
-    </nav>
+    </Navbar>
   );
 }
 
