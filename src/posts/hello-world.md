@@ -39,4 +39,4 @@ This blog is where I'll think out loud about:
 
 Writing helps me to solidify my understanding of the topics I care about, and I'm hoping to compile a repository of information that I can look back on and reference in the future. I also want to share useful information with other developers, and hopefully spark some interesting discussions via email. I don't have a specific schedule in mind for posting, but I plan to write whenever I have something interesting to share or reflect on.
 
-That's the plan. Thanks for reading! If something here resonates, [email me](mailto:maj@kravos.me).
+That's the plan. Thanks for reading! If something here resonates, [email me](mailto:contact@majkravos.com).
