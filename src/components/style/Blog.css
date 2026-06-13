@@ -81,6 +81,28 @@
     font-size: 1.05rem;
 }
 
+.Blog-subscribe {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+[data-theme="dark"] .Blog-subscribe {
+    background-color: #3e8ed0;
+}
+
+[data-theme="light"] .Blog-subscribe {
+    background-color: #3273dc;
+}
+
+.Blog-subscribe:hover {
+    opacity: 0.85;
+    color: #fff;
+}
+
 /* Blog list previews */
 .Blog-list {
     margin-top: 2.5rem;
