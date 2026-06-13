@@ -40,6 +40,9 @@ build/Release
 # Production build output
 /build
 
+# Generated RSS feed (rebuilt by prebuild on every deploy)
+/public/rss.xml
+
 # Dependency directories
 node_modules/
 jspm_packages/
