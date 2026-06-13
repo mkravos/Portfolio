@@ -5,7 +5,12 @@
     <link>https://www.majkravos.com/blog</link>
     <description>Updates on my projects, thoughts on software development, and more.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2026 03:49:56 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2026 04:01:44 GMT</lastBuildDate>
+    <image>
+      <url>https://www.majkravos.com/favicon.png</url>
+      <title>Maj Kravos — Blog</title>
+      <link>https://www.majkravos.com/blog</link>
+    </image>
     <atom:link href="https://www.majkravos.com/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello, World!</title>

@@ -105,6 +105,11 @@ function buildFeed(posts) {
     <description>${escapeXml(SITE_DESCRIPTION)}</description>
     <language>en-us</language>
     <lastBuildDate>${lastBuild}</lastBuildDate>
+    <image>
+      <url>${SITE_URL}/favicon.png</url>
+      <title>${escapeXml(SITE_TITLE)}</title>
+      <link>${SITE_URL}/blog</link>
+    </image>
     <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml" />
 ${items}
   </channel>
