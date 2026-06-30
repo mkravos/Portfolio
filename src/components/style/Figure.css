@@ -21,6 +21,7 @@
     text-align: center;
     width: 80%;
     padding: 50px;
+    z-index: 20;
 }
 
 .Project-figure>figcaption a {
@@ -81,6 +82,7 @@
     padding: 8px 16px;
     border-radius: 8px;
     backdrop-filter: blur(4px);
+    pointer-events: none;
 }
 
 .asarconnect {

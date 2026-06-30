@@ -1,8 +1,15 @@
 import "./style/Figure.css";
 import React from "react";
-import { Section, Container, Columns, Heading, Button } from "react-bulma-components";
+import {
+  Section,
+  Container,
+  Columns,
+  Heading,
+  Button,
+} from "react-bulma-components";
 import parallaxPng from "../assets/projects/parallax.png";
 import vivaplusPng from "../assets/projects/vivaplus.png";
+import vivaplusBrochure from "../assets/projects/vivaplus_brochure.pdf";
 import latitudePng from "../assets/projects/latitude.png";
 import percipiaPng from "../assets/clients/percipia-logo.png";
 import asarPng from "../assets/clients/asar-logo.png";
@@ -24,7 +31,8 @@ function ProjectButton({ darkMode, href, children }) {
       outlined
       rounded
       href={href}
-      target="_blank noopener noreferrer"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <span className="Figure-link-text">{children}</span>
     </Button>
@@ -39,7 +47,11 @@ export default function Work({ darkMode }) {
           <Heading spaced className="is-size-3-desktop is-size-4-mobile">
             My Recent Work
           </Heading>
-          <Heading subtitle renderAs="h2" className="Work-subtitle is-size-5-desktop">
+          <Heading
+            subtitle
+            renderAs="h2"
+            className="Work-subtitle is-size-5-desktop"
+          >
             Here are a few products I've worked on. Want to see other
             examples?&nbsp;
             <a href="mailto:contact@majkravos.com?subject=Maj, I'd like to see more of your work!">
@@ -73,7 +85,10 @@ export default function Work({ darkMode }) {
                       delivers enhanced user experience with responsive design
                       and optimal compatibility across all devices and displays.
                     </h1>
-                    <ProjectButton darkMode={darkMode} href="https://percipia.com/parallax">
+                    <ProjectButton
+                      darkMode={darkMode}
+                      href="https://percipia.com/parallax"
+                    >
                       Visit PARALLAX Product Page&nbsp;&nbsp;&gt;
                     </ProjectButton>
                   </figcaption>
@@ -103,8 +118,8 @@ export default function Work({ darkMode }) {
                       solution that enhances the guest experience in hotel
                       rooms.
                     </h1>
-                    <ProjectButton darkMode={darkMode} href="https://percipia.com/viva+">
-                      Visit VIVA+ Product Page&nbsp;&nbsp;&gt;
+                    <ProjectButton darkMode={darkMode} href={vivaplusBrochure}>
+                      View VIVA+ Product Brochure&nbsp;&nbsp;&gt;
                     </ProjectButton>
                   </figcaption>
                   <div className="overlay"></div>
@@ -136,7 +151,10 @@ export default function Work({ darkMode }) {
                       enhance the guest experience and meet the unique
                       requirements of Percipia's hospitality clients.
                     </h1>
-                    <ProjectButton darkMode={darkMode} href="https://percipia.com/mobilesolution">
+                    <ProjectButton
+                      darkMode={darkMode}
+                      href="https://percipia.com/latitudeaio"
+                    >
                       Visit LATITUDE Product Page&nbsp;&nbsp;&gt;
                     </ProjectButton>
                   </figcaption>
@@ -158,7 +176,10 @@ export default function Work({ darkMode }) {
                       track of, and manage their freelancers and offshore
                       employees seamlessly.
                     </h1>
-                    <ProjectButton darkMode={darkMode} href="https://asardigital.com/">
+                    <ProjectButton
+                      darkMode={darkMode}
+                      href="https://asardigital.com/"
+                    >
                       Visit ASAR Digital's Website&nbsp;&nbsp;&gt;
                     </ProjectButton>
                   </figcaption>
@@ -169,7 +190,10 @@ export default function Work({ darkMode }) {
           </div>
         </Container>
       </Section>
-      <Section size="medium" className="clients is-transparent has-text-centered">
+      <Section
+        size="medium"
+        className="clients is-transparent has-text-centered"
+      >
         <Container className="is-narrow">
           <Columns centered>
             <Columns.Column className="Clients-title-column" size="half">
